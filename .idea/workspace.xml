@@ -31,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestNopCommerce.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="153" column="64" selection-start-line="153" selection-start-column="64" selection-end-line="153" selection-end-column="64" />
+            <state relative-caret-position="480">
+              <caret line="172" column="91" selection-start-line="172" selection-start-column="91" selection-end-line="172" selection-end-column="91" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -129,12 +129,48 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TestNopCommerce.checkOutConEfectivo">
+  <component name="RunManager" selected="TestNG.TestNopCommerce.checkOutConTarjetaDeCredito">
+    <configuration name="TestNopCommerce.agregarALaWishlist" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="nopCommerce" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestNopCommerce" />
+      <option name="METHOD_NAME" value="agregarALaWishlist" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestNopCommerce.agregarWishlist" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="nopCommerce" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestNopCommerce" />
+      <option name="METHOD_NAME" value="agregarWishlist" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestNopCommerce.checkOutConEfectivo" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="nopCommerce" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestNopCommerce" />
       <option name="METHOD_NAME" value="checkOutConEfectivo" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestNopCommerce.checkOutConTarjetaDeCredito" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="nopCommerce" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestNopCommerce" />
+      <option name="METHOD_NAME" value="checkOutConTarjetaDeCredito" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -156,6 +192,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestNopCommerce.checkOutConTarjetaDeCredito" />
+        <item itemvalue="TestNG.TestNopCommerce.agregarWishlist" />
+        <item itemvalue="TestNG.TestNopCommerce.agregarALaWishlist" />
         <item itemvalue="TestNG.TestNopCommerce.checkOutConEfectivo" />
         <item itemvalue="TestNG.TestNopCommerce.nuevoUsuarioRegistrado" />
       </list>
@@ -175,35 +214,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestNopCommerce_checkOutConEfectivo - 2019.06.09 at 20h 38m 53s.xml">
-      <configuration name="TestNopCommerce.checkOutConEfectivo" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_agregarWishlist - 2019.06.10 at 17h 29m 10s.xml">
+      <configuration name="TestNopCommerce.agregarWishlist" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_checkOutConEfectivo - 2019.06.09 at 20h 39m 41s.xml">
-      <configuration name="TestNopCommerce.checkOutConEfectivo" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_agregarWishlist - 2019.06.10 at 17h 31m 55s.xml">
+      <configuration name="TestNopCommerce.agregarWishlist" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_checkOutConEfectivo - 2019.06.09 at 20h 42m 44s.xml">
-      <configuration name="TestNopCommerce.checkOutConEfectivo" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_agregarWishlist - 2019.06.10 at 17h 34m 16s.xml">
+      <configuration name="TestNopCommerce.agregarWishlist" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_checkOutConEfectivo - 2019.06.09 at 20h 43m 22s.xml">
-      <configuration name="TestNopCommerce.checkOutConEfectivo" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_agregarWishlist - 2019.06.10 at 17h 35m 36s.xml">
+      <configuration name="TestNopCommerce.agregarWishlist" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_checkOutConEfectivo - 2019.06.09 at 20h 46m 01s.xml">
-      <configuration name="TestNopCommerce.checkOutConEfectivo" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_agregarWishlist - 2019.06.10 at 17h 37m 33s.xml">
+      <configuration name="TestNopCommerce.agregarWishlist" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_checkOutConEfectivo - 2019.06.09 at 20h 49m 09s.xml">
-      <configuration name="TestNopCommerce.checkOutConEfectivo" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_checkOutConTarjetaDeCredito - 2019.06.11 at 00h 03m 16s.xml">
+      <configuration name="TestNopCommerce.checkOutConTarjetaDeCredito" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_checkOutConEfectivo - 2019.06.09 at 20h 52m 18s.xml">
-      <configuration name="TestNopCommerce.checkOutConEfectivo" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_checkOutConTarjetaDeCredito - 2019.06.11 at 00h 08m 20s.xml">
+      <configuration name="TestNopCommerce.checkOutConTarjetaDeCredito" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_checkOutConEfectivo - 2019.06.09 at 20h 52m 56s.xml">
-      <configuration name="TestNopCommerce.checkOutConEfectivo" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_checkOutConTarjetaDeCredito - 2019.06.11 at 00h 09m 59s.xml">
+      <configuration name="TestNopCommerce.checkOutConTarjetaDeCredito" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_checkOutConEfectivo - 2019.06.09 at 20h 55m 18s.xml">
-      <configuration name="TestNopCommerce.checkOutConEfectivo" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_checkOutConTarjetaDeCredito - 2019.06.11 at 00h 10m 56s.xml">
+      <configuration name="TestNopCommerce.checkOutConTarjetaDeCredito" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_checkOutConEfectivo - 2019.06.09 at 20h 56m 02s.xml">
-      <configuration name="TestNopCommerce.checkOutConEfectivo" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_checkOutConTarjetaDeCredito - 2019.06.11 at 00h 13m 06s.xml">
+      <configuration name="TestNopCommerce.checkOutConTarjetaDeCredito" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -248,8 +287,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestNopCommerce.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="153" column="64" selection-start-line="153" selection-start-column="64" selection-end-line="153" selection-end-column="64" />
+        <state relative-caret-position="480">
+          <caret line="172" column="91" selection-start-line="172" selection-start-column="91" selection-end-line="172" selection-end-column="91" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
