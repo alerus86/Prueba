@@ -6,16 +6,18 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.annotations.*;
+import org.testng.asserts.SoftAssert;
 
 
+import java.sql.Driver;
 import java.util.concurrent.TimeUnit;
 
 import static org.testng.Assert.assertEquals;
+import static org.testng.Assert.assertTrue;
 
 
-    public class TestNopCommerce
+public class TestNopCommerce
     {
         /* ID(si el ID es único en la página)
          • Name(si el name es único en la página)
@@ -38,6 +40,7 @@ import static org.testng.Assert.assertEquals;
         WebDriverWait wait = null;
         WebDriver chrome = null;
         ChromeOptions chromeOptions = null;
+        SoftAssert softAssert;
 
 
         @BeforeClass
@@ -46,7 +49,7 @@ import static org.testng.Assert.assertEquals;
             System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
             chromeOptions = new ChromeOptions();
             chromeOptions.addArguments("start-maximized");
-
+            softAssert = new SoftAssert();
         }
 
         @BeforeMethod
@@ -104,9 +107,9 @@ import static org.testng.Assert.assertEquals;
             loginUser.click();
             WebElement clickProduct = chrome.findElement(By.xpath("//a[@href='/electronics']"));
             clickProduct.click();
-            WebElement clickCellPhone = chrome.findElement(By.xpath("/html/body/div[6]/div[3]/div[2]/div[2]/div/div[2]/div[1]/div/div[2]/div/div/a"));
+            WebElement clickCellPhone = chrome.findElement(By.linkText("Cell phones"));
             clickCellPhone.click();
-            WebElement selectedCellPhone = chrome.findElement(By.xpath("/html/body/div[6]/div[3]/div[2]/div[2]/div/div[2]/div[3]/div/div[3]/div/div[2]/h2/a"));
+            WebElement selectedCellPhone = chrome.findElement(By.linkText("Nokia Lumia 1020"));
             selectedCellPhone.click();
             WebElement addToCart = chrome.findElement(By.id("add-to-cart-button-20"));
             addToCart.click();
@@ -228,6 +231,7 @@ import static org.testng.Assert.assertEquals;
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("page-title")));
             WebElement orderConfirmation = chrome.findElement(By.className("page-title"));
             assertEquals(orderConfirmation.getText() , "Checkout");
+
         }
 
         @Test
@@ -261,14 +265,56 @@ import static org.testng.Assert.assertEquals;
             wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("bar-notification-container")));
             WebElement wishlistButton = chrome.findElement(By.className("ico-wishlist"));
             wishlistButton.click();
+            softAssert.assertEquals(chrome.findElement(By.xpath("//a[@href='/sound-forge-pro-11-recurring']")).getText() , "");
+            softAssert.assertEquals(chrome.findElement(By.xpath("//a[@href='/vintage-style-engagement-ring']")).getText() , "");
+            softAssert.assertAll();
+        }
+
+        @Test
+        public void compareProducts () {
+
+            WebElement login = chrome.findElement(By.className("ico-login"));
+            login.click();
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("login-button")));
+            WebElement titleVisible = chrome.findElement(By.className("page-title"));
+            assertEquals(titleVisible.getText() , "Welcome, Please Sign In!");
+            WebElement loginEmail = chrome.findElement(By.id("Email"));
+            loginEmail.sendKeys("testing2002@testing.com");
+            WebElement loginPassword = chrome.findElement(By.id("Password"));
+            loginPassword.sendKeys("Testing1234");
+            WebElement loginUser = chrome.findElement(By.className("login-button"));
+            loginUser.click();
+            WebElement searchElement = chrome.findElement(By.id("small-searchterms"));
+            searchElement.sendKeys("ring");
+            searchElement.submit();
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("page-title")));
+            WebElement orderConfirmation = chrome.findElement(By.className("page-title"));
+            assertEquals(orderConfirmation.getText() , "Search");
+            WebElement compareProduct = chrome.findElement(By.cssSelector("input[onclick = 'return AjaxCart.addproducttocomparelist(\"/compareproducts/add/12\"),!1']"));
+            compareProduct.click();
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("bar-notification")));
+            WebElement alertSuccess = chrome.findElement(By.id("bar-notification"));
+            assertEquals(alertSuccess.getText(), "The product has been added to your product comparison");
+            wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("bar-notification-container")));
+            WebElement compareProduct2 = chrome.findElement(By.cssSelector("input[onclick = 'return AjaxCart.addproducttocomparelist(\"/compareproducts/add/42\"),!1']"));
+            compareProduct2.click();
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("bar-notification")));
+            WebElement alertSuccess2 = chrome.findElement(By.id("bar-notification"));
+            assertEquals(alertSuccess2.getText(), "The product has been added to your product comparison");
+            WebElement compareProductButton = chrome.findElement(By.linkText("Compare products list"));
+            compareProductButton.click();
+            WebElement clearButton = chrome.findElement(By.className("clear-list"));
+            assertTrue(clearButton.isDisplayed());
 
         }
 
-//        @AfterMethod
-//        public void tearDown()
-//        {
-//        chrome.quit();
-//        }
+        @AfterMethod
+        public void tearDown()
+        {
+            chrome.quit();
+
+
+        }
 
     }
 

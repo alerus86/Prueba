@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="165200e7-6d7c-433d-8fb0-660f693366fc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestNopCommerce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestNopCommerce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestNopCommerce.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestNopCommerce.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -19,20 +17,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestNopCommerce.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="172" column="91" selection-start-line="172" selection-start-column="91" selection-end-line="172" selection-end-column="91" />
+            <state relative-caret-position="808">
+              <caret line="313" column="12" lean-forward="true" selection-start-line="313" selection-start-column="12" selection-end-line="313" selection-end-column="12" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -48,6 +37,12 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>xpath</find>
+      <find>assert</find>
+    </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -99,6 +94,13 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="nopCommerce" type="b2602c69:ProjectViewProjectNode" />
+              <item name="nopCommerce" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -129,7 +131,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TestNopCommerce.checkOutConTarjetaDeCredito">
+  <component name="RunManager" selected="TestNG.TestNopCommerce.compareProducts">
     <configuration name="TestNopCommerce.agregarALaWishlist" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="nopCommerce" />
       <option name="PACKAGE_NAME" value="" />
@@ -178,11 +180,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestNopCommerce.nuevoUsuarioRegistrado" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestNopCommerce.compareProducts" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="nopCommerce" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestNopCommerce" />
-      <option name="METHOD_NAME" value="nuevoUsuarioRegistrado" />
+      <option name="METHOD_NAME" value="compareProducts" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -192,11 +194,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestNopCommerce.checkOutConTarjetaDeCredito" />
+        <item itemvalue="TestNG.TestNopCommerce.compareProducts" />
         <item itemvalue="TestNG.TestNopCommerce.agregarWishlist" />
-        <item itemvalue="TestNG.TestNopCommerce.agregarALaWishlist" />
         <item itemvalue="TestNG.TestNopCommerce.checkOutConEfectivo" />
-        <item itemvalue="TestNG.TestNopCommerce.nuevoUsuarioRegistrado" />
+        <item itemvalue="TestNG.TestNopCommerce.checkOutConTarjetaDeCredito" />
+        <item itemvalue="TestNG.TestNopCommerce.agregarALaWishlist" />
       </list>
     </recent_temporary>
   </component>
@@ -214,35 +216,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestNopCommerce_agregarWishlist - 2019.06.10 at 17h 29m 10s.xml">
+    <history-entry file="TestNopCommerce_agregarWishlist - 2019.06.11 at 18h 42m 36s.xml">
       <configuration name="TestNopCommerce.agregarWishlist" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_agregarWishlist - 2019.06.10 at 17h 31m 55s.xml">
+    <history-entry file="TestNopCommerce_agregarWishlist - 2019.06.11 at 18h 43m 16s.xml">
       <configuration name="TestNopCommerce.agregarWishlist" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_agregarWishlist - 2019.06.10 at 17h 34m 16s.xml">
+    <history-entry file="TestNopCommerce_agregarWishlist - 2019.06.11 at 18h 47m 15s.xml">
       <configuration name="TestNopCommerce.agregarWishlist" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_agregarWishlist - 2019.06.10 at 17h 35m 36s.xml">
+    <history-entry file="TestNopCommerce_agregarWishlist - 2019.06.11 at 18h 54m 54s.xml">
       <configuration name="TestNopCommerce.agregarWishlist" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_agregarWishlist - 2019.06.10 at 17h 37m 33s.xml">
+    <history-entry file="TestNopCommerce_agregarWishlist - 2019.06.11 at 18h 55m 36s.xml">
       <configuration name="TestNopCommerce.agregarWishlist" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_checkOutConTarjetaDeCredito - 2019.06.11 at 00h 03m 16s.xml">
-      <configuration name="TestNopCommerce.checkOutConTarjetaDeCredito" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_compareProducts - 2019.06.11 at 21h 12m 24s.xml">
+      <configuration name="TestNopCommerce.compareProducts" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_checkOutConTarjetaDeCredito - 2019.06.11 at 00h 08m 20s.xml">
-      <configuration name="TestNopCommerce.checkOutConTarjetaDeCredito" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_compareProducts - 2019.06.11 at 21h 21m 57s.xml">
+      <configuration name="TestNopCommerce.compareProducts" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_checkOutConTarjetaDeCredito - 2019.06.11 at 00h 09m 59s.xml">
-      <configuration name="TestNopCommerce.checkOutConTarjetaDeCredito" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_compareProducts - 2019.06.11 at 21h 23m 17s.xml">
+      <configuration name="TestNopCommerce.compareProducts" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_checkOutConTarjetaDeCredito - 2019.06.11 at 00h 10m 56s.xml">
-      <configuration name="TestNopCommerce.checkOutConTarjetaDeCredito" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_compareProducts - 2019.06.11 at 21h 24m 38s.xml">
+      <configuration name="TestNopCommerce.compareProducts" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_checkOutConTarjetaDeCredito - 2019.06.11 at 00h 13m 06s.xml">
-      <configuration name="TestNopCommerce.checkOutConTarjetaDeCredito" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_compareProducts - 2019.06.11 at 21h 29m 19s.xml">
+      <configuration name="TestNopCommerce.compareProducts" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -259,7 +261,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -277,6 +279,20 @@
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>getText</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>softAssert</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
+  </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
@@ -285,10 +301,145 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/MethodInvocationHelper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="108" selection-start-line="108" selection-end-line="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-support/3.141.59/selenium-support-3.141.59.jar!/org/openqa/selenium/support/ui/ExpectedConditions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="352" selection-start-line="352" selection-end-line="352" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_211/jre/lib/rt.jar!/sun/reflect/NativeMethodAccessorImpl.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="33" column="33" selection-start-line="33" selection-start-column="33" selection-end-line="33" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-api/3.141.59/selenium-api-3.141.59.jar!/org/openqa/selenium/By.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="42" selection-start-line="42" selection-end-line="42" />
+          <folding>
+            <element signature="e#1191#1192#0" expanded="true" />
+            <element signature="e#1243#1244#0" expanded="true" />
+            <element signature="e#1295#1296#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar!/com/google/common/collect/ImmutableBiMapFauxverideShim.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="15" selection-start-line="15" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar!/com/google/common/collect/CollectPreconditions.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar!/com/google/common/collect/SingletonImmutableBiMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar!/com/google/common/collect/ImmutableBiMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="34" selection-start-line="34" selection-end-line="34" />
+          <folding>
+            <element signature="e#1249#1250#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/com/google/guava/guava/25.0-jre/guava-25.0-jre.jar!/com/google/common/collect/ImmutableMap.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="67" selection-start-line="67" selection-end-line="67" />
+          <folding>
+            <element signature="e#2669#2670#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar!/org/openqa/selenium/remote/SessionId.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+          <folding>
+            <element signature="e#613#614#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar!/org/openqa/selenium/remote/RemoteWebDriver.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="499" selection-start-line="499" selection-end-line="499" />
+          <folding>
+            <element signature="e#10996#10997#0" expanded="true" />
+            <element signature="e#11039#11040#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar!/org/openqa/selenium/remote/HttpCommandExecutor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="92" selection-start-line="92" selection-end-line="92" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar!/org/openqa/selenium/remote/Command.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="31" selection-start-line="31" selection-end-line="31" />
+          <folding>
+            <element signature="e#734#735#0" expanded="true" />
+            <element signature="e#771#772#0" expanded="true" />
+            <element signature="e#834#835#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar!/org/openqa/selenium/remote/http/AbstractHttpCommandCodec.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="110" selection-start-line="110" selection-end-line="110" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar!/org/openqa/selenium/remote/service/DriverCommandExecutor.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="218">
+          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/seleniumhq/selenium/selenium-remote-driver/3.141.59/selenium-remote-driver-3.141.59.jar!/org/openqa/selenium/remote/RemoteWebElement.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="116">
+          <caret line="271" selection-start-line="271" selection-end-line="271" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestNopCommerce.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="172" column="91" selection-start-line="172" selection-start-column="91" selection-end-line="172" selection-end-column="91" />
+        <state relative-caret-position="808">
+          <caret line="313" column="12" lean-forward="true" selection-start-line="313" selection-start-column="12" selection-end-line="313" selection-end-column="12" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
