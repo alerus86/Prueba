@@ -17,11 +17,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/pom.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestNopCommerce.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="808">
-              <caret line="313" column="12" lean-forward="true" selection-start-line="313" selection-start-column="12" selection-end-line="313" selection-end-column="12" />
+            <state relative-caret-position="890">
+              <caret line="400" column="41" selection-start-line="400" selection-start-column="41" selection-end-line="400" selection-end-column="41" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -131,12 +140,12 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TestNopCommerce.compareProducts">
-    <configuration name="TestNopCommerce.agregarALaWishlist" type="TestNG" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="TestNG.TestNopCommerce.newAddress">
+    <configuration name="TestNopCommerce.agregarWishlist" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="nopCommerce" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestNopCommerce" />
-      <option name="METHOD_NAME" value="agregarALaWishlist" />
+      <option name="METHOD_NAME" value="agregarWishlist" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -144,11 +153,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestNopCommerce.agregarWishlist" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="TestNopCommerce.changePassword" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="nopCommerce" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestNopCommerce" />
-      <option name="METHOD_NAME" value="agregarWishlist" />
+      <option name="METHOD_NAME" value="changePassword" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -168,18 +177,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestNopCommerce.checkOutConTarjetaDeCredito" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="nopCommerce" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestNopCommerce" />
-      <option name="METHOD_NAME" value="checkOutConTarjetaDeCredito" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestNopCommerce.compareProducts" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="nopCommerce" />
       <option name="PACKAGE_NAME" value="" />
@@ -192,13 +189,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestNopCommerce.newAddress" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="nopCommerce" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestNopCommerce" />
+      <option name="METHOD_NAME" value="newAddress" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestNopCommerce.newAddress" />
         <item itemvalue="TestNG.TestNopCommerce.compareProducts" />
+        <item itemvalue="TestNG.TestNopCommerce.changePassword" />
         <item itemvalue="TestNG.TestNopCommerce.agregarWishlist" />
         <item itemvalue="TestNG.TestNopCommerce.checkOutConEfectivo" />
-        <item itemvalue="TestNG.TestNopCommerce.checkOutConTarjetaDeCredito" />
-        <item itemvalue="TestNG.TestNopCommerce.agregarALaWishlist" />
       </list>
     </recent_temporary>
   </component>
@@ -216,35 +225,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestNopCommerce_agregarWishlist - 2019.06.11 at 18h 42m 36s.xml">
-      <configuration name="TestNopCommerce.agregarWishlist" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_newAddress - 2019.06.13 at 14h 09m 53s.xml">
+      <configuration name="TestNopCommerce.newAddress" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_agregarWishlist - 2019.06.11 at 18h 43m 16s.xml">
-      <configuration name="TestNopCommerce.agregarWishlist" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_newAddress - 2019.06.13 at 14h 28m 52s.xml">
+      <configuration name="TestNopCommerce.newAddress" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_agregarWishlist - 2019.06.11 at 18h 47m 15s.xml">
-      <configuration name="TestNopCommerce.agregarWishlist" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_newAddress - 2019.06.13 at 14h 33m 32s.xml">
+      <configuration name="TestNopCommerce.newAddress" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_agregarWishlist - 2019.06.11 at 18h 54m 54s.xml">
-      <configuration name="TestNopCommerce.agregarWishlist" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_newAddress - 2019.06.13 at 14h 55m 32s.xml">
+      <configuration name="TestNopCommerce.newAddress" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_agregarWishlist - 2019.06.11 at 18h 55m 36s.xml">
-      <configuration name="TestNopCommerce.agregarWishlist" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_newAddress - 2019.06.13 at 14h 58m 36s.xml">
+      <configuration name="TestNopCommerce.newAddress" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_compareProducts - 2019.06.11 at 21h 12m 24s.xml">
-      <configuration name="TestNopCommerce.compareProducts" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_newAddress - 2019.06.13 at 15h 03m 10s.xml">
+      <configuration name="TestNopCommerce.newAddress" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_compareProducts - 2019.06.11 at 21h 21m 57s.xml">
-      <configuration name="TestNopCommerce.compareProducts" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_newAddress - 2019.06.13 at 15h 06m 44s.xml">
+      <configuration name="TestNopCommerce.newAddress" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_compareProducts - 2019.06.11 at 21h 23m 17s.xml">
-      <configuration name="TestNopCommerce.compareProducts" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_newAddress - 2019.06.13 at 15h 09m 32s.xml">
+      <configuration name="TestNopCommerce.newAddress" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_compareProducts - 2019.06.11 at 21h 24m 38s.xml">
-      <configuration name="TestNopCommerce.compareProducts" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_newAddress - 2019.06.13 at 15h 10m 13s.xml">
+      <configuration name="TestNopCommerce.newAddress" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_compareProducts - 2019.06.11 at 21h 29m 19s.xml">
-      <configuration name="TestNopCommerce.compareProducts" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_newAddress - 2019.06.13 at 15h 31m 45s.xml">
+      <configuration name="TestNopCommerce.newAddress" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
@@ -260,13 +269,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50067115" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Version Control" order="9" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -294,13 +303,6 @@
     </expressions>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/internal/MethodInvocationHelper.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="133">
@@ -436,10 +438,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="19" selection-start-line="30" selection-start-column="19" selection-end-line="30" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestNopCommerce.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="808">
-          <caret line="313" column="12" lean-forward="true" selection-start-line="313" selection-start-column="12" selection-end-line="313" selection-end-column="12" />
+        <state relative-caret-position="890">
+          <caret line="400" column="41" selection-start-line="400" selection-start-column="41" selection-end-line="400" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

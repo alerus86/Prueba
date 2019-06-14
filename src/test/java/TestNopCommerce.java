@@ -61,6 +61,7 @@ public class TestNopCommerce
             chrome.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         }
 
+        //CP1
         @Test
         public void nuevoUsuarioRegistrado () {
 
@@ -91,6 +92,7 @@ public class TestNopCommerce
 
         }
 
+        //CP2
         @Test
         public void checkOutConEfectivo() {
 
@@ -102,7 +104,7 @@ public class TestNopCommerce
             WebElement loginEmail = chrome.findElement(By.id("Email"));
             loginEmail.sendKeys("testing2002@testing.com");
             WebElement loginPassword = chrome.findElement(By.id("Password"));
-            loginPassword.sendKeys("Testing1234");
+            loginPassword.sendKeys("Testing!");
             WebElement loginUser = chrome.findElement(By.className("login-button"));
             loginUser.click();
             WebElement clickProduct = chrome.findElement(By.xpath("//a[@href='/electronics']"));
@@ -155,6 +157,7 @@ public class TestNopCommerce
             assertEquals(orderConfirmation.getText() , "Checkout");
         }
 
+        //CP3
         @Test
         public void checkOutConTarjetaDeCredito () {
 
@@ -166,7 +169,7 @@ public class TestNopCommerce
             WebElement loginEmail = chrome.findElement(By.id("Email"));
             loginEmail.sendKeys("testing2002@testing.com");
             WebElement loginPassword = chrome.findElement(By.id("Password"));
-            loginPassword.sendKeys("Testing1234");
+            loginPassword.sendKeys("Testing!");
             WebElement loginUser = chrome.findElement(By.className("login-button"));
             loginUser.click();
             WebElement clickProduct = chrome.findElement(By.xpath("//a[@href='/electronics']"));
@@ -234,6 +237,7 @@ public class TestNopCommerce
 
         }
 
+        //CP4
         @Test
         public void agregarWishlist (){
 
@@ -245,7 +249,7 @@ public class TestNopCommerce
             WebElement loginEmail = chrome.findElement(By.id("Email"));
             loginEmail.sendKeys("testing2002@testing.com");
             WebElement loginPassword = chrome.findElement(By.id("Password"));
-            loginPassword.sendKeys("Testing1234");
+            loginPassword.sendKeys("Testing!");
             WebElement loginUser = chrome.findElement(By.className("login-button"));
             loginUser.click();
             WebElement searchElement = chrome.findElement(By.id("small-searchterms"));
@@ -270,6 +274,7 @@ public class TestNopCommerce
             softAssert.assertAll();
         }
 
+        //CP5
         @Test
         public void compareProducts () {
 
@@ -281,7 +286,7 @@ public class TestNopCommerce
             WebElement loginEmail = chrome.findElement(By.id("Email"));
             loginEmail.sendKeys("testing2002@testing.com");
             WebElement loginPassword = chrome.findElement(By.id("Password"));
-            loginPassword.sendKeys("Testing1234");
+            loginPassword.sendKeys("Testing!");
             WebElement loginUser = chrome.findElement(By.className("login-button"));
             loginUser.click();
             WebElement searchElement = chrome.findElement(By.id("small-searchterms"));
@@ -308,10 +313,99 @@ public class TestNopCommerce
 
         }
 
+        //CP6
+        @Test
+        public void changePassword() {
+
+            WebElement login = chrome.findElement(By.className("ico-login"));
+            login.click();
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("login-button")));
+            WebElement titleVisible = chrome.findElement(By.className("page-title"));
+            assertEquals(titleVisible.getText() , "Welcome, Please Sign In!");
+            WebElement loginEmail = chrome.findElement(By.id("Email"));
+            loginEmail.sendKeys("testing2002@testing.com");
+            WebElement loginPassword = chrome.findElement(By.id("Password"));
+            loginPassword.sendKeys("Testing!");
+            WebElement loginUser = chrome.findElement(By.className("login-button"));
+            loginUser.click();
+            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("html-home-page")));
+            WebElement myAccountButton = chrome.findElement(By.className("ico-account"));
+            assertEquals(myAccountButton.getText() , "My account");
+            myAccountButton.click();
+            WebElement changePassword = chrome.findElement(By.xpath("//a[@href='/customer/changepassword']"));
+            changePassword.click();
+            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("master-wrapper-page")));
+            WebElement passwordFieldsVisible = chrome.findElement(By.className("fieldset"));
+            assertTrue(passwordFieldsVisible.isDisplayed());
+            WebElement oldPassword = chrome.findElement(By.id("OldPassword"));
+            oldPassword.sendKeys("Testing0000");
+            WebElement newPassword = chrome.findElement(By.id("NewPassword"));
+            newPassword.sendKeys("Testing!");
+            WebElement reEnterPassword = chrome.findElement(By.id("ConfirmNewPassword"));
+            reEnterPassword.sendKeys("Testing!");
+            WebElement changePasswordButton = chrome.findElement(By.className("change-password-button"));
+            changePasswordButton.click();
+            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("result")));
+            WebElement passwordWasChange = chrome.findElement(By.className("result"));
+            assertEquals(passwordWasChange.getText() , "Password was changed");
+
+        }
+
+        //CP7
+        @Test
+        public void newAddress() {
+
+            WebElement login = chrome.findElement(By.className("ico-login"));
+            login.click();
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("login-button")));
+            WebElement titleVisible = chrome.findElement(By.className("page-title"));
+            assertEquals(titleVisible.getText() , "Welcome, Please Sign In!");
+            WebElement loginEmail = chrome.findElement(By.id("Email"));
+            loginEmail.sendKeys("testing2002@testing.com");
+            WebElement loginPassword = chrome.findElement(By.id("Password"));
+            loginPassword.sendKeys("Testing!");
+            WebElement loginUser = chrome.findElement(By.className("login-button"));
+            loginUser.click();
+            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("html-home-page")));
+            WebElement myAccountButton = chrome.findElement(By.className("ico-account"));
+            assertEquals(myAccountButton.getText() , "My account");
+            myAccountButton.click();
+            WebElement myAddressButton = chrome.findElement(By.xpath("//a[@href = '/customer/addresses']"));
+            myAddressButton.click();
+            WebElement addNewAddressButton = chrome.findElement(By.cssSelector("input[onclick ='location.href=\"/customer/addressadd\"']"));
+            addNewAddressButton.click();
+            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("page-title")));
+            WebElement SaveButtonAddress = chrome.findElement(By.className("save-address-button"));
+            assertTrue(SaveButtonAddress.isDisplayed());
+            WebElement addressFirstName = chrome.findElement(By.id("Address_FirstName"));
+            addressFirstName.sendKeys("TestName1");
+            WebElement addressLastName = chrome.findElement(By.id("Address_LastName"));
+            addressLastName.sendKeys("TestLastName");
+            WebElement addressEmail = chrome.findElement(By.id("Address_Email"));
+            addressEmail.sendKeys("testing1122@testing.com");
+            WebElement selectCountryComboAddress = chrome.findElement(By.id("Address_CountryId"));
+            Select countrySelectAddress = new Select(selectCountryComboAddress);
+            countrySelectAddress.selectByValue("1");
+            WebElement selectStateComboAddress = chrome.findElement(By.id("Address_StateProvinceId"));
+            Select stateComboAddress = new Select(selectStateComboAddress);
+            stateComboAddress.selectByValue("62");
+            WebElement cityAddress = chrome.findElement(By.id("Address_City"));
+            cityAddress.sendKeys("City");
+            WebElement newAddress = chrome.findElement(By.id("Address_Address1"));
+            newAddress.sendKeys("TestingAddress 1234 apto 100");
+            WebElement zipCodeAddress = chrome.findElement(By.id("Address_ZipPostalCode"));
+            zipCodeAddress.sendKeys("12345");
+            WebElement phoneNumberAddress = chrome.findElement(By.id("Address_PhoneNumber"));
+            phoneNumberAddress.sendKeys("123456");
+            WebElement saveNewAddressButton = chrome.findElement(By.className("save-address-button"));
+            saveNewAddressButton.click();
+
+        }
+
         @AfterMethod
         public void tearDown()
         {
-            chrome.quit();
+            //chrome.quit();
 
 
         }
