@@ -399,15 +399,145 @@ public class TestNopCommerce
             phoneNumberAddress.sendKeys("123456");
             WebElement saveNewAddressButton = chrome.findElement(By.className("save-address-button"));
             saveNewAddressButton.click();
+            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("page-title")));
+            WebElement newAddressAdded = chrome.findElement(By.className("name"));
+            assertEquals(newAddressAdded.getText() , "TestName1 TestLastName");
 
+        }
+
+        //CP8
+        @Test
+        public void removeItemFromCart (){
+
+            WebElement login = chrome.findElement(By.className("ico-login"));
+            login.click();
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("login-button")));
+            WebElement titleVisible = chrome.findElement(By.className("page-title"));
+            assertEquals(titleVisible.getText() , "Welcome, Please Sign In!");
+            WebElement loginEmail = chrome.findElement(By.id("Email"));
+            loginEmail.sendKeys("testing2002@testing.com");
+            WebElement loginPassword = chrome.findElement(By.id("Password"));
+            loginPassword.sendKeys("Testing!");
+            WebElement loginUser = chrome.findElement(By.className("login-button"));
+            loginUser.click();
+            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("html-home-page")));
+            WebElement clickProduct = chrome.findElement(By.xpath("//a[@href='/electronics']"));
+            clickProduct.click();
+            WebElement clickCellPhone = chrome.findElement(By.linkText("Cell phones"));
+            clickCellPhone.click();
+            WebElement selectedCellPhone = chrome.findElement(By.linkText("Nokia Lumia 1020"));
+            selectedCellPhone.click();
+            WebElement addToCart = chrome.findElement(By.id("add-to-cart-button-20"));
+            addToCart.click();
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("bar-notification")));
+            WebElement alertSuccess = chrome.findElement(By.id("bar-notification"));
+            assertEquals(alertSuccess.getText(), "The product has been added to your shopping cart");
+            wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("bar-notification-container")));
+            WebElement clickProduct2 = chrome.findElement(By.xpath("//a[@href='/books']"));
+            clickProduct2.click();
+            WebElement selectBook = chrome.findElement(By.xpath("//a[@href='/fahrenheit-451-by-ray-bradbury']"));
+            selectBook.click();
+            WebElement addToCart2 = chrome.findElement(By.cssSelector("input[onclick = 'return AjaxCart.addproducttocart_details(\"/addproducttocart/details/37/1\",\"#product-details-form\"),!1']"));
+            addToCart2.click();
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("bar-notification")));
+            WebElement alertSuccess2 = chrome.findElement(By.id("bar-notification"));
+            assertEquals(alertSuccess2.getText(), "The product has been added to your shopping cart");
+            wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("bar-notification-container")));
+            WebElement shoppingCart = chrome.findElement(By.className("ico-cart"));
+            shoppingCart.click();
+            WebElement productRow = chrome.findElement(By.xpath("//a[contains(text(),'Nokia')]/parent::td/parent::tr"));
+            WebElement checkSelected = productRow.findElement(By.cssSelector("[type='checkbox']"));
+            checkSelected.click();
+            WebElement productRow2 = chrome.findElement(By.xpath("//a[contains(text(),'Fahrenheit')]/parent::td/parent::tr"));
+            WebElement checkSelected2 = productRow2.findElement(By.cssSelector("[type='checkbox']"));
+            checkSelected2.click();
+            WebElement updateCart = chrome.findElement(By.className("update-cart-button"));
+            updateCart.click();
+            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("page-title")));
+            WebElement shoppingCartTitle = chrome.findElement(By.className("no-data"));
+            assertEquals(shoppingCartTitle.getText() , "Your Shopping Cart is empty!");
+        }
+
+        //CP9
+        @Test
+        public void reviewProduct (){
+
+            WebElement login = chrome.findElement(By.className("ico-login"));
+            login.click();
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("login-button")));
+            WebElement titleVisible = chrome.findElement(By.className("page-title"));
+            assertEquals(titleVisible.getText() , "Welcome, Please Sign In!");
+            WebElement loginEmail = chrome.findElement(By.id("Email"));
+            loginEmail.sendKeys("testing2002@testing.com");
+            WebElement loginPassword = chrome.findElement(By.id("Password"));
+            loginPassword.sendKeys("Testing!");
+            WebElement loginUser = chrome.findElement(By.className("login-button"));
+            loginUser.click();
+            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("html-home-page")));
+            WebElement clickProduct = chrome.findElement(By.xpath("//a[@href='/electronics']"));
+            clickProduct.click();
+            WebElement clickCamera = chrome.findElement(By.linkText("Camera & photo"));
+            clickCamera.click();
+            WebElement selectedProduct = chrome.findElement(By.linkText("Nikon D5500 DSLR"));
+            selectedProduct.click();
+            WebElement addReview = chrome.findElement(By.linkText("Add your review"));
+            addReview.click();
+            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("page-title")));
+            WebElement reviewTitle = chrome.findElement(By.id("AddProductReview_Title"));
+            reviewTitle.sendKeys("Testing title review");
+            WebElement reviewTextBox = chrome.findElement(By.id("AddProductReview_ReviewText"));
+            reviewTextBox.sendKeys("Testing a review for the selected product");
+            WebElement ratingRadioButton = chrome.findElement(By.id("addproductrating_4"));
+            ratingRadioButton.click();
+            WebElement submitReview = chrome.findElement(By.className("write-product-review-button"));
+            submitReview.click();
+            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("page-title")));
+            WebElement reviewSuccessfully = chrome.findElement(By.className("result"));
+            assertEquals(reviewSuccessfully.getText() , "Product review is successfully added.");
+
+        }
+
+        //CP10
+        @Test
+        public void sendProductEmailToFriend() {
+
+            WebElement login = chrome.findElement(By.className("ico-login"));
+            login.click();
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("login-button")));
+            WebElement titleVisible = chrome.findElement(By.className("page-title"));
+            assertEquals(titleVisible.getText() , "Welcome, Please Sign In!");
+            WebElement loginEmail = chrome.findElement(By.id("Email"));
+            loginEmail.sendKeys("testing2002@testing.com");
+            WebElement loginPassword = chrome.findElement(By.id("Password"));
+            loginPassword.sendKeys("Testing!");
+            WebElement loginUser = chrome.findElement(By.className("login-button"));
+            loginUser.click();
+            WebElement clickProduct = chrome.findElement(By.xpath("//a[@href='/electronics']"));
+            clickProduct.click();
+            WebElement clickCellPhone = chrome.findElement(By.linkText("Cell phones"));
+            clickCellPhone.click();
+            WebElement selectedCellPhone = chrome.findElement(By.linkText("HTC One M8 Android L 5.0 Lollipop"));
+            selectedCellPhone.click();
+            WebElement emailAFriend = chrome.findElement(By.className("email-a-friend-button"));
+            emailAFriend.click();
+            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//a[@href='/htc-one-m8-android-l-50-lollipop']")));
+            WebElement friendEmail = chrome.findElement(By.id("FriendEmail"));
+            friendEmail.sendKeys("emailfriend@test.com");
+            WebElement yourEmailDisplayed = chrome.findElement(By.className("your-email"));
+            assertTrue(yourEmailDisplayed.isDisplayed());
+            WebElement personalMessage = chrome.findElement(By.id("PersonalMessage"));
+            personalMessage.sendKeys("Just a testing message for email product to a friend");
+            WebElement sendEmailButton = chrome.findElement(By.className("send-email-a-friend-button"));
+            sendEmailButton.click();
+            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("page-title")));
+            WebElement emailSuccessfullySent = chrome.findElement(By.className("result"));
+            assertEquals(emailSuccessfullySent.getText() , "Your message has been sent.");
         }
 
         @AfterMethod
         public void tearDown()
         {
             //chrome.quit();
-
-
         }
 
     }

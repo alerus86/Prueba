@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="165200e7-6d7c-433d-8fb0-660f693366fc" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestNopCommerce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestNopCommerce.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestNopCommerce.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestNopCommerce.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,8 +31,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestNopCommerce.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="890">
-              <caret line="400" column="41" selection-start-line="400" selection-start-column="41" selection-end-line="400" selection-end-column="41" />
+            <state relative-caret-position="202">
+              <caret line="533" column="46" selection-start-line="533" selection-start-column="46" selection-end-line="533" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -51,6 +53,7 @@
     <findStrings>
       <find>xpath</find>
       <find>assert</find>
+      <find>cssse</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -72,10 +75,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="175" />
-    <option name="y" value="40" />
-    <option name="width" value="1005" />
-    <option name="height" value="690" />
+    <option name="x" value="952" />
+    <option name="width" value="977" />
+    <option name="height" value="1038" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -83,37 +85,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="nopCommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nopCommerce" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nopCommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nopCommerce" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nopCommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nopCommerce" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="nopCommerce" type="b2602c69:ProjectViewProjectNode" />
-              <item name="nopCommerce" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
+      <pane id="ProjectPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -140,43 +114,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TestNopCommerce.newAddress">
-    <configuration name="TestNopCommerce.agregarWishlist" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="nopCommerce" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestNopCommerce" />
-      <option name="METHOD_NAME" value="agregarWishlist" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestNopCommerce.changePassword" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="nopCommerce" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestNopCommerce" />
-      <option name="METHOD_NAME" value="changePassword" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestNopCommerce.checkOutConEfectivo" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="nopCommerce" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestNopCommerce" />
-      <option name="METHOD_NAME" value="checkOutConEfectivo" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="TestNG.TestNopCommerce.sendProductEmailToFriend">
     <configuration name="TestNopCommerce.compareProducts" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="nopCommerce" />
       <option name="PACKAGE_NAME" value="" />
@@ -201,13 +139,49 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestNopCommerce.removeItemFromCart" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="nopCommerce" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestNopCommerce" />
+      <option name="METHOD_NAME" value="removeItemFromCart" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestNopCommerce.reviewProduct" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="nopCommerce" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestNopCommerce" />
+      <option name="METHOD_NAME" value="reviewProduct" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestNopCommerce.sendProductEmailToFriend" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="nopCommerce" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestNopCommerce" />
+      <option name="METHOD_NAME" value="sendProductEmailToFriend" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="TestNG.TestNopCommerce.sendProductEmailToFriend" />
+        <item itemvalue="TestNG.TestNopCommerce.reviewProduct" />
+        <item itemvalue="TestNG.TestNopCommerce.removeItemFromCart" />
         <item itemvalue="TestNG.TestNopCommerce.newAddress" />
         <item itemvalue="TestNG.TestNopCommerce.compareProducts" />
-        <item itemvalue="TestNG.TestNopCommerce.changePassword" />
-        <item itemvalue="TestNG.TestNopCommerce.agregarWishlist" />
-        <item itemvalue="TestNG.TestNopCommerce.checkOutConEfectivo" />
       </list>
     </recent_temporary>
   </component>
@@ -225,42 +199,42 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestNopCommerce_newAddress - 2019.06.13 at 14h 09m 53s.xml">
-      <configuration name="TestNopCommerce.newAddress" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_reviewProduct - 2019.06.16 at 13h 33m 00s.xml">
+      <configuration name="TestNopCommerce.reviewProduct" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_newAddress - 2019.06.13 at 14h 28m 52s.xml">
-      <configuration name="TestNopCommerce.newAddress" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_reviewProduct - 2019.06.16 at 13h 35m 55s.xml">
+      <configuration name="TestNopCommerce.reviewProduct" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_newAddress - 2019.06.13 at 14h 33m 32s.xml">
-      <configuration name="TestNopCommerce.newAddress" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_reviewProduct - 2019.06.16 at 13h 36m 31s.xml">
+      <configuration name="TestNopCommerce.reviewProduct" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_newAddress - 2019.06.13 at 14h 55m 32s.xml">
-      <configuration name="TestNopCommerce.newAddress" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_sendProductEmailToFriend - 2019.06.16 at 13h 39m 54s.xml">
+      <configuration name="TestNopCommerce.sendProductEmailToFriend" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_newAddress - 2019.06.13 at 14h 58m 36s.xml">
-      <configuration name="TestNopCommerce.newAddress" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_sendProductEmailToFriend - 2019.06.16 at 13h 41m 16s.xml">
+      <configuration name="TestNopCommerce.sendProductEmailToFriend" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_newAddress - 2019.06.13 at 15h 03m 10s.xml">
-      <configuration name="TestNopCommerce.newAddress" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_sendProductEmailToFriend - 2019.06.16 at 13h 42m 24s.xml">
+      <configuration name="TestNopCommerce.sendProductEmailToFriend" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_newAddress - 2019.06.13 at 15h 06m 44s.xml">
-      <configuration name="TestNopCommerce.newAddress" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_sendProductEmailToFriend - 2019.06.16 at 13h 45m 07s.xml">
+      <configuration name="TestNopCommerce.sendProductEmailToFriend" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_newAddress - 2019.06.13 at 15h 09m 32s.xml">
-      <configuration name="TestNopCommerce.newAddress" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_sendProductEmailToFriend - 2019.06.16 at 13h 49m 13s.xml">
+      <configuration name="TestNopCommerce.sendProductEmailToFriend" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_newAddress - 2019.06.13 at 15h 10m 13s.xml">
-      <configuration name="TestNopCommerce.newAddress" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_sendProductEmailToFriend - 2019.06.16 at 13h 50m 40s.xml">
+      <configuration name="TestNopCommerce.sendProductEmailToFriend" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_newAddress - 2019.06.13 at 15h 31m 45s.xml">
-      <configuration name="TestNopCommerce.newAddress" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_sendProductEmailToFriend - 2019.06.16 at 13h 51m 49s.xml">
+      <configuration name="TestNopCommerce.sendProductEmailToFriend" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.1261745" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14899328" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -269,7 +243,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.3286119" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49932885" visible="true" weight="0.32719547" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39943343" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -277,7 +251,7 @@
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50067115" side_tool="true" weight="0.3286119" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Messages" order="10" weight="0.3286119" />
+      <window_info anchor="bottom" id="Messages" order="10" weight="0.32719547" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -438,6 +412,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/SuiteRunnerWorker.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="35" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="510">
@@ -447,8 +428,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestNopCommerce.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="890">
-          <caret line="400" column="41" selection-start-line="400" selection-start-column="41" selection-end-line="400" selection-end-column="41" />
+        <state relative-caret-position="202">
+          <caret line="533" column="46" selection-start-line="533" selection-start-column="46" selection-end-line="533" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
