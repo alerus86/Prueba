@@ -6,11 +6,12 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.annotations.*;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
+import pageObject.*;
 
-
-import java.sql.Driver;
 import java.util.concurrent.TimeUnit;
 
 import static org.testng.Assert.assertEquals;
@@ -27,7 +28,7 @@ public class TestNopCommerce
          • Link text o partial link text
          • XPath
  */
-        WebElement gender;
+        /*WebElement gender;
         WebElement firstName;
         WebElement lastName;
         Select dayOfBirth;
@@ -36,59 +37,46 @@ public class TestNopCommerce
         WebElement email;
         WebElement password;
         WebElement confirmPassword;
-        WebElement registerUserButton;
-        WebDriverWait wait = null;
-        WebDriver chrome = null;
-        ChromeOptions chromeOptions = null;
-        SoftAssert softAssert;
+        WebElement registerUserButton;*/
 
 
-        @BeforeClass
-        public void setup ()
-        {
-            System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
-            chromeOptions = new ChromeOptions();
-            chromeOptions.addArguments("start-maximized");
-            softAssert = new SoftAssert();
-        }
+        private WebDriverWait wait;
+        private WebDriver chrome;
+        private ChromeOptions chromeOptions;
+        private SoftAssert softAssert;
+        private RegisterUserPage addUser;
+        private HomePage homePage;
+        private LoginUser loginNewUser;
+        private ResultProductPage resultProductPage;
+        private ProductSelectionPage productSelection;
+        private ItemSelectedResult itemSelected;
 
         @BeforeMethod
         public void setupTest(){
 
+
+            System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+            chromeOptions = new ChromeOptions();
+            chromeOptions.addArguments("start-maximized");
             chrome = new ChromeDriver(chromeOptions);
             wait = new WebDriverWait(chrome, 10);
+            addUser = new RegisterUserPage(chrome);
+            homePage = new HomePage(chrome);
             chrome.get("http://demo.nopcommerce.com/");
             chrome.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+            softAssert = new SoftAssert();
         }
+
 
         //CP1
         @Test
         public void nuevoUsuarioRegistrado () {
 
-            WebElement registerButton = chrome.findElement(By.className("ico-register"));
-            registerButton.click();
-            assertEquals(chrome.getTitle(), "nopCommerce demo store. Register");
-            gender = chrome.findElement(By.id("gender-male"));
-            gender.click();
-            firstName = chrome.findElement(By.id("FirstName"));
-            firstName.sendKeys("TestingFirstName");
-            lastName = chrome.findElement(By.id("LastName"));
-            lastName.sendKeys("TestingLastName");
-            dayOfBirth = new Select(chrome.findElement(By.name("DateOfBirthDay")));
-            dayOfBirth.selectByIndex(14);
-            monthOfBirth = new Select(chrome.findElement(By.name("DateOfBirthMonth")));
-            monthOfBirth.selectByIndex(7);
-            yearOfBirth = new Select(chrome.findElement(By.name("DateOfBirthYear")));
-            yearOfBirth.selectByValue("1986");
-            email = chrome.findElement(By.id("Email"));
-            email.sendKeys("testing2002@testing.com");
-            password = chrome.findElement(By.id("Password"));
-            password.sendKeys("Testing1234");
-            confirmPassword = chrome.findElement(By.id("ConfirmPassword"));
-            confirmPassword.sendKeys("Testing1234");
-            registerUserButton = chrome.findElement(By.id("register-button"));
-            registerUserButton.click();
-            assertEquals(chrome.getTitle(), "nopCommerce demo store. Register");
+            addUser = homePage.register();
+            assertTrue(homePage.pageTitleIsDiplayed());
+            addUser.registerUser("Test" , "Testing" , "14" , "7" , "1986" , "testing2004@test.com" ,
+                    "Test1234" , "Test1234");
+            assertTrue(addUser.messageSuccessIsDisplayed());
 
         }
 
@@ -96,7 +84,24 @@ public class TestNopCommerce
         @Test
         public void checkOutConEfectivo() {
 
-            WebElement login = chrome.findElement(By.className("ico-login"));
+            loginNewUser = homePage.login();
+            assertTrue(homePage.loginTitleIsDisplayed());
+            loginNewUser.loginUser("testing2002@testing.com" , "Testing!");
+            resultProductPage = homePage.results();
+            resultProductPage.SelectCellPhone();
+            productSelection = homePage.productSelected();
+            productSelection.CellPhoneSelection();
+            itemSelected = homePage.itemSelected();
+            itemSelected.NokiCellPhone();
+
+
+
+
+
+
+
+
+           /* WebElement login = chrome.findElement(By.className("ico-login"));
             login.click();
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("login-button")));
             WebElement titleVisible = chrome.findElement(By.className("page-title"));
@@ -154,7 +159,7 @@ public class TestNopCommerce
             continueButtonStep6.click();
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("page-title")));
             WebElement orderConfirmation = chrome.findElement(By.className("page-title"));
-            assertEquals(orderConfirmation.getText() , "Checkout");
+            assertEquals(orderConfirmation.getText() , "Checkout");*/
         }
 
         //CP3
