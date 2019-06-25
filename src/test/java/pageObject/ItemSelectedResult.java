@@ -13,6 +13,8 @@ public class ItemSelectedResult extends BasePage {
     private WebElement addToCart;
     @FindBy (id = "bar-notification")
     private WebElement alertSuccess;
+    @FindBy (className = "ico-cart")
+    private WebElement shoppingCart;
 
 
 
@@ -23,8 +25,8 @@ public class ItemSelectedResult extends BasePage {
         wait.until(ExpectedConditions.visibilityOfElementLocated((By.id("bar-notification"))));
         Assert.assertEquals(alertSuccess.getText() , "The product has been added to your shopping cart");
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("bar-notification-container")));
+        shoppingCart.click();
     }
-
 
 
 

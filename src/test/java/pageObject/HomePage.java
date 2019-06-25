@@ -19,7 +19,6 @@ public class HomePage extends BasePage {
     private WebElement clickButtonProduct;
 
 
-
     public RegisterUserPage register () {
 
         registerButton.click();
@@ -49,6 +48,28 @@ public class HomePage extends BasePage {
 
         return new ItemSelectedResult(chrome);
     }
+
+    public ShoppingCartPage shoppingCartPage () {
+
+        return new ShoppingCartPage(chrome);
+
+    }
+
+    public CheckoutPage checkoutPage () {
+
+        return new CheckoutPage(chrome);
+    }
+
+    public SearchAndResultPage searchAndResultPage (){
+
+        return new SearchAndResultPage(chrome);
+    }
+
+    public CompareProductPage compareProductPage () {
+
+        return new CompareProductPage(chrome);
+    }
+
 
 
 
