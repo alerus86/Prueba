@@ -7,6 +7,8 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
 
+import static org.testng.Assert.assertEquals;
+
 public class CheckoutPage extends BasePage {
 
     @FindBy (id = "ShipToSameAddress")
@@ -49,6 +51,14 @@ public class CheckoutPage extends BasePage {
     private WebElement yearExpirationCard;
     @FindBy (id = "CardCode")
     private WebElement cardCode;
+    @FindBy (xpath = "//a[contains(text(),'Nokia')]/parent::td/parent::tr")
+    private WebElement deleteCheckSelected1;
+    @FindBy (xpath = "//a[contains(text(),'Fahrenheit')]/parent::td/parent::tr")
+    private WebElement deleteCheckSelected2;
+    @FindBy (className = "update-cart-button")
+    private WebElement updateCart;
+    @FindBy (className = "page-title")
+    private WebElement resultDeleteItems;
 
     public void checkoutProduct (String countryCombo , String city , String address1 , String zipCode , String phoneNumber) {
 
@@ -95,6 +105,16 @@ public class CheckoutPage extends BasePage {
         continueButtonStep5.click();
         continueButtonStep6.click();
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("page-title")));
+
+    }
+
+    public void deleteCheckoutProduct() {
+
+        deleteCheckSelected1.findElement(By.cssSelector("[type='checkbox']")).click();
+        deleteCheckSelected2.findElement(By.cssSelector("[type='checkbox']")).click();
+        updateCart.click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("page-title")));
+        assertEquals(resultDeleteItems.getText() , "Shopping cart");
 
     }
 

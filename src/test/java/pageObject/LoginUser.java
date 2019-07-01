@@ -24,6 +24,8 @@ public class LoginUser extends BasePage {
 
     }
 
+
+
     public LoginUser(WebDriver chrome) {
         super(chrome);
     }

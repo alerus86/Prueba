@@ -8,10 +8,31 @@ public class ResultProductPage extends BasePage {
 
     @FindBy (linkText = "Cell phones")
     private WebElement clickCellPhone;
+    @FindBy (xpath = "//a[@href='/electronics']")
+    private WebElement clickButtonProductElectronics;
+    @FindBy (xpath = "//a [@href = '/books']")
+    private WebElement clickBook;
+    @FindBy (linkText = "Camera & photo")
+    private WebElement clickCameraAndPhoto;
+
 
     public void SelectCellPhone() {
 
+        clickButtonProductElectronics.click();
         clickCellPhone.click();
+    }
+
+    public void SelectBook () {
+
+        clickBook.click();
+
+    }
+
+    public void SelectCameraAndPhoto () {
+
+        clickButtonProductElectronics.click();
+        clickCameraAndPhoto.click();
+
     }
 
     public ResultProductPage(WebDriver chrome) {

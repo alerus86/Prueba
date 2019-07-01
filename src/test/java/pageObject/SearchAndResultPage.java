@@ -21,6 +21,8 @@ public class SearchAndResultPage extends BasePage {
 
     }
 
+
+
     public boolean resultsProductsDisplayed (){
 
         return resultsSearchProduct.isDisplayed();

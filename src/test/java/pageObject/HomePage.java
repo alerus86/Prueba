@@ -15,8 +15,8 @@ public class HomePage extends BasePage {
     private WebElement loginButton;
     @FindBy (className = "page-title")
     private WebElement loginTitlePage;
-    @FindBy (xpath = "//a[@href='/electronics']")
-    private WebElement clickButtonProduct;
+    @FindBy (className = "ico-account")
+    private WebElement myAccountButton;
 
 
     public RegisterUserPage register () {
@@ -34,8 +34,8 @@ public class HomePage extends BasePage {
 
     public ResultProductPage results () {
 
-        clickButtonProduct.click();
         return new ResultProductPage(chrome);
+
     }
 
     public ProductSelectionPage productSelected () {
@@ -68,6 +68,23 @@ public class HomePage extends BasePage {
     public CompareProductPage compareProductPage () {
 
         return new CompareProductPage(chrome);
+    }
+
+    public MyAccountPage myAccountPage () {
+
+        myAccountButton.click();
+        return new MyAccountPage(chrome);
+
+    }
+
+    public ReviewSelectedProductPage reviewSelectedProduct() {
+
+        return new ReviewSelectedProductPage(chrome);
+    }
+
+    public EmailAFriendPage emailAFriendPage () {
+
+        return new EmailAFriendPage(chrome);
     }
 
 

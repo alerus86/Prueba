@@ -46,7 +46,7 @@ public class TestNopCommerce
         private SoftAssert softAssert;
         private RegisterUserPage addUser;
         private HomePage homePage;
-        private LoginUser loginNewUser;
+        private LoginUser loginSomeUser;
         private ResultProductPage resultProductPage;
         private ProductSelectionPage productSelection;
         private ItemSelectedResult itemSelected;
@@ -54,6 +54,10 @@ public class TestNopCommerce
         private CheckoutPage checkoutPage;
         private SearchAndResultPage searchAndResultPage;
         private CompareProductPage compareProductPage;
+        private MyAccountPage myAccountPage;
+        private ReviewSelectedProductPage reviewSelectedProduct;
+        private EmailAFriendPage emailAFriendPage;
+
 
         @BeforeMethod
         public void setupTest(){
@@ -88,13 +92,13 @@ public class TestNopCommerce
         @Test
         public void checkOutConEfectivo() {
 
-            loginNewUser = homePage.login();
+            loginSomeUser = homePage.login();
             assertTrue(homePage.loginTitleIsDisplayed());
-            loginNewUser.loginUser("testing2002@testing.com" , "Testing!");
+            loginSomeUser.loginUser("testing2002@testing.com" , "Testing$");
             resultProductPage = homePage.results();
             resultProductPage.SelectCellPhone();
             productSelection = homePage.productSelected();
-            productSelection.CellPhoneSelection();
+            productSelection.CellPhoneSelectionNokia();
             itemSelected = homePage.itemSelected();
             itemSelected.NokiCellPhone();
             shoppingCart = homePage.shoppingCartPage();
@@ -109,13 +113,13 @@ public class TestNopCommerce
         @Test
         public void checkOutConTarjetaDeCredito () {
 
-            loginNewUser = homePage.login();
+            loginSomeUser = homePage.login();
             assertTrue(homePage.loginTitleIsDisplayed());
-            loginNewUser.loginUser("testing2002@testing.com" , "Testing!");
+            loginSomeUser.loginUser("testing2002@testing.com" , "Testing$");
             resultProductPage = homePage.results();
             resultProductPage.SelectCellPhone();
             productSelection = homePage.productSelected();
-            productSelection.CellPhoneSelection();
+            productSelection.CellPhoneSelectionNokia();
             itemSelected = homePage.itemSelected();
             itemSelected.NokiCellPhone();
             shoppingCart = homePage.shoppingCartPage();
@@ -133,9 +137,9 @@ public class TestNopCommerce
         public void agregarWishlist (){
 
 
-            loginNewUser = homePage.login();
+            loginSomeUser = homePage.login();
             assertTrue(homePage.loginTitleIsDisplayed());
-            loginNewUser.loginUser("testing2002@testing.com" , "Testing!");
+            loginSomeUser.loginUser("testing2002@testing.com" , "Testing$");
             searchAndResultPage = homePage.searchAndResultPage();
             searchAndResultPage.searchProduct("ring");
             assertTrue(searchAndResultPage.resultsProductsDisplayed());
@@ -149,9 +153,9 @@ public class TestNopCommerce
         public void compareProducts () {
 
 
-            loginNewUser = homePage.login();
+            loginSomeUser = homePage.login();
             assertTrue(homePage.loginTitleIsDisplayed());
-            loginNewUser.loginUser("testing2002@testing.com" , "Testing!");
+            loginSomeUser.loginUser("testing2002@testing.com" , "Testing$");
             searchAndResultPage = homePage.searchAndResultPage();
             searchAndResultPage.searchProduct("ring");
             assertTrue(searchAndResultPage.resultsProductsDisplayed());
@@ -163,43 +167,15 @@ public class TestNopCommerce
 
         //CP6
         @Test
-        public void changePassword() {
+        public void changePasswordUser() {
 
 
-            loginNewUser = homePage.login();
+            loginSomeUser = homePage.login();
             assertTrue(homePage.loginTitleIsDisplayed());
-            loginNewUser.loginUser("testing2002@testing.com" , "Testing!");
-            /*WebElement login = chrome.findElement(By.className("ico-login"));
-            login.click();
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("login-button")));
-            WebElement titleVisible = chrome.findElement(By.className("page-title"));
-            assertEquals(titleVisible.getText() , "Welcome, Please Sign In!");
-            WebElement loginEmail = chrome.findElement(By.id("Email"));
-            loginEmail.sendKeys("testing2002@testing.com");
-            WebElement loginPassword = chrome.findElement(By.id("Password"));
-            loginPassword.sendKeys("Testing!");
-            WebElement loginUser = chrome.findElement(By.className("login-button"));
-            loginUser.click();
-            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("html-home-page")));
-            WebElement myAccountButton = chrome.findElement(By.className("ico-account"));
-            assertEquals(myAccountButton.getText() , "My account");
-            myAccountButton.click();
-            WebElement changePassword = chrome.findElement(By.xpath("//a[@href='/customer/changepassword']"));
-            changePassword.click();
-            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("master-wrapper-page")));
-            WebElement passwordFieldsVisible = chrome.findElement(By.className("fieldset"));
-            assertTrue(passwordFieldsVisible.isDisplayed());
-            WebElement oldPassword = chrome.findElement(By.id("OldPassword"));
-            oldPassword.sendKeys("Testing0000");
-            WebElement newPassword = chrome.findElement(By.id("NewPassword"));
-            newPassword.sendKeys("Testing!");
-            WebElement reEnterPassword = chrome.findElement(By.id("ConfirmNewPassword"));
-            reEnterPassword.sendKeys("Testing!");
-            WebElement changePasswordButton = chrome.findElement(By.className("change-password-button"));
-            changePasswordButton.click();
-            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("result")));
-            WebElement passwordWasChange = chrome.findElement(By.className("result"));
-            assertEquals(passwordWasChange.getText() , "Password was changed");*/
+            loginSomeUser.loginUser("testing2002@testing.com" , "Testing$");
+            myAccountPage = homePage.myAccountPage();
+            myAccountPage.changePassword("Testing#" , "Testing$" , "Testing$");
+
 
         }
 
@@ -207,53 +183,15 @@ public class TestNopCommerce
         @Test
         public void newAddress() {
 
-            WebElement login = chrome.findElement(By.className("ico-login"));
-            login.click();
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("login-button")));
-            WebElement titleVisible = chrome.findElement(By.className("page-title"));
-            assertEquals(titleVisible.getText() , "Welcome, Please Sign In!");
-            WebElement loginEmail = chrome.findElement(By.id("Email"));
-            loginEmail.sendKeys("testing2002@testing.com");
-            WebElement loginPassword = chrome.findElement(By.id("Password"));
-            loginPassword.sendKeys("Testing!");
-            WebElement loginUser = chrome.findElement(By.className("login-button"));
-            loginUser.click();
-            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("html-home-page")));
-            WebElement myAccountButton = chrome.findElement(By.className("ico-account"));
-            assertEquals(myAccountButton.getText() , "My account");
-            myAccountButton.click();
-            WebElement myAddressButton = chrome.findElement(By.xpath("//a[@href = '/customer/addresses']"));
-            myAddressButton.click();
-            WebElement addNewAddressButton = chrome.findElement(By.cssSelector("input[onclick ='location.href=\"/customer/addressadd\"']"));
-            addNewAddressButton.click();
-            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("page-title")));
-            WebElement SaveButtonAddress = chrome.findElement(By.className("save-address-button"));
-            assertTrue(SaveButtonAddress.isDisplayed());
-            WebElement addressFirstName = chrome.findElement(By.id("Address_FirstName"));
-            addressFirstName.sendKeys("TestName1");
-            WebElement addressLastName = chrome.findElement(By.id("Address_LastName"));
-            addressLastName.sendKeys("TestLastName");
-            WebElement addressEmail = chrome.findElement(By.id("Address_Email"));
-            addressEmail.sendKeys("testing1122@testing.com");
-            WebElement selectCountryComboAddress = chrome.findElement(By.id("Address_CountryId"));
-            Select countrySelectAddress = new Select(selectCountryComboAddress);
-            countrySelectAddress.selectByValue("1");
-            WebElement selectStateComboAddress = chrome.findElement(By.id("Address_StateProvinceId"));
-            Select stateComboAddress = new Select(selectStateComboAddress);
-            stateComboAddress.selectByValue("62");
-            WebElement cityAddress = chrome.findElement(By.id("Address_City"));
-            cityAddress.sendKeys("City");
-            WebElement newAddress = chrome.findElement(By.id("Address_Address1"));
-            newAddress.sendKeys("TestingAddress 1234 apto 100");
-            WebElement zipCodeAddress = chrome.findElement(By.id("Address_ZipPostalCode"));
-            zipCodeAddress.sendKeys("12345");
-            WebElement phoneNumberAddress = chrome.findElement(By.id("Address_PhoneNumber"));
-            phoneNumberAddress.sendKeys("123456");
-            WebElement saveNewAddressButton = chrome.findElement(By.className("save-address-button"));
-            saveNewAddressButton.click();
-            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("page-title")));
-            WebElement newAddressAdded = chrome.findElement(By.className("name"));
-            assertEquals(newAddressAdded.getText() , "TestName1 TestLastName");
+
+            loginSomeUser = homePage.login();
+            assertTrue(homePage.loginTitleIsDisplayed());
+            loginSomeUser.loginUser("testing2002@testing.com" , "Testing$");
+            myAccountPage = homePage.myAccountPage();
+            myAccountPage.addNewAddress("Test1" , "Testing1" ,
+                    "testing2019@testing.com" , "1" ,
+                    "62" , "City" , "Testing 1212 block 2" ,
+                    "12345" , "1234567");
 
         }
 
@@ -261,91 +199,38 @@ public class TestNopCommerce
         @Test
         public void removeItemFromCart (){
 
-            WebElement login = chrome.findElement(By.className("ico-login"));
-            login.click();
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("login-button")));
-            WebElement titleVisible = chrome.findElement(By.className("page-title"));
-            assertEquals(titleVisible.getText() , "Welcome, Please Sign In!");
-            WebElement loginEmail = chrome.findElement(By.id("Email"));
-            loginEmail.sendKeys("testing2002@testing.com");
-            WebElement loginPassword = chrome.findElement(By.id("Password"));
-            loginPassword.sendKeys("Testing!");
-            WebElement loginUser = chrome.findElement(By.className("login-button"));
-            loginUser.click();
-            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("html-home-page")));
-            WebElement clickProduct = chrome.findElement(By.xpath("//a[@href='/electronics']"));
-            clickProduct.click();
-            WebElement clickCellPhone = chrome.findElement(By.linkText("Cell phones"));
-            clickCellPhone.click();
-            WebElement selectedCellPhone = chrome.findElement(By.linkText("Nokia Lumia 1020"));
-            selectedCellPhone.click();
-            WebElement addToCart = chrome.findElement(By.id("add-to-cart-button-20"));
-            addToCart.click();
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("bar-notification")));
-            WebElement alertSuccess = chrome.findElement(By.id("bar-notification"));
-            assertEquals(alertSuccess.getText(), "The product has been added to your shopping cart");
-            wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("bar-notification-container")));
-            WebElement clickProduct2 = chrome.findElement(By.xpath("//a[@href='/books']"));
-            clickProduct2.click();
-            WebElement selectBook = chrome.findElement(By.xpath("//a[@href='/fahrenheit-451-by-ray-bradbury']"));
-            selectBook.click();
-            WebElement addToCart2 = chrome.findElement(By.cssSelector("input[onclick = 'return AjaxCart.addproducttocart_details(\"/addproducttocart/details/37/1\",\"#product-details-form\"),!1']"));
-            addToCart2.click();
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("bar-notification")));
-            WebElement alertSuccess2 = chrome.findElement(By.id("bar-notification"));
-            assertEquals(alertSuccess2.getText(), "The product has been added to your shopping cart");
-            wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("bar-notification-container")));
-            WebElement shoppingCart = chrome.findElement(By.className("ico-cart"));
-            shoppingCart.click();
-            WebElement productRow = chrome.findElement(By.xpath("//a[contains(text(),'Nokia')]/parent::td/parent::tr"));
-            WebElement checkSelected = productRow.findElement(By.cssSelector("[type='checkbox']"));
-            checkSelected.click();
-            WebElement productRow2 = chrome.findElement(By.xpath("//a[contains(text(),'Fahrenheit')]/parent::td/parent::tr"));
-            WebElement checkSelected2 = productRow2.findElement(By.cssSelector("[type='checkbox']"));
-            checkSelected2.click();
-            WebElement updateCart = chrome.findElement(By.className("update-cart-button"));
-            updateCart.click();
-            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("page-title")));
-            WebElement shoppingCartTitle = chrome.findElement(By.className("no-data"));
-            assertEquals(shoppingCartTitle.getText() , "Your Shopping Cart is empty!");
+            loginSomeUser = homePage.login();
+            assertTrue(homePage.loginTitleIsDisplayed());
+            loginSomeUser.loginUser("testing2002@testing.com" , "Testing$");
+            resultProductPage = homePage.results();
+            resultProductPage.SelectCellPhone();
+            productSelection = homePage.productSelected();
+            productSelection.CellPhoneSelectionNokia();
+            itemSelected = homePage.itemSelected();
+            itemSelected.NokiCellPhone();
+            resultProductPage.SelectBook();
+            productSelection.BookSelection();
+            itemSelected.FahrenheitBook();
+            checkoutPage = homePage.checkoutPage();
+            checkoutPage.deleteCheckoutProduct();
         }
 
         //CP9
         @Test
         public void reviewProduct (){
 
-            WebElement login = chrome.findElement(By.className("ico-login"));
-            login.click();
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("login-button")));
-            WebElement titleVisible = chrome.findElement(By.className("page-title"));
-            assertEquals(titleVisible.getText() , "Welcome, Please Sign In!");
-            WebElement loginEmail = chrome.findElement(By.id("Email"));
-            loginEmail.sendKeys("testing2002@testing.com");
-            WebElement loginPassword = chrome.findElement(By.id("Password"));
-            loginPassword.sendKeys("Testing!");
-            WebElement loginUser = chrome.findElement(By.className("login-button"));
-            loginUser.click();
-            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("html-home-page")));
-            WebElement clickProduct = chrome.findElement(By.xpath("//a[@href='/electronics']"));
-            clickProduct.click();
-            WebElement clickCamera = chrome.findElement(By.linkText("Camera & photo"));
-            clickCamera.click();
-            WebElement selectedProduct = chrome.findElement(By.linkText("Nikon D5500 DSLR"));
-            selectedProduct.click();
-            WebElement addReview = chrome.findElement(By.linkText("Add your review"));
-            addReview.click();
-            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("page-title")));
-            WebElement reviewTitle = chrome.findElement(By.id("AddProductReview_Title"));
-            reviewTitle.sendKeys("Testing title review");
-            WebElement reviewTextBox = chrome.findElement(By.id("AddProductReview_ReviewText"));
-            reviewTextBox.sendKeys("Testing a review for the selected product");
-            WebElement ratingRadioButton = chrome.findElement(By.id("addproductrating_4"));
-            ratingRadioButton.click();
-            WebElement submitReview = chrome.findElement(By.className("write-product-review-button"));
-            submitReview.click();
-            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("page-title")));
-            WebElement reviewSuccessfully = chrome.findElement(By.className("result"));
-            assertEquals(reviewSuccessfully.getText() , "Product review is successfully added.");
+            loginSomeUser = homePage.login();
+            assertTrue(homePage.loginTitleIsDisplayed());
+            loginSomeUser.loginUser("testing2002@testing.com" , "Testing$");
+            resultProductPage = homePage.results();
+            resultProductPage.SelectCameraAndPhoto();
+            productSelection = homePage.productSelected();
+            productSelection.SelectedCamera();
+            itemSelected = homePage.itemSelected();
+            itemSelected.NikonCamera();
+            reviewSelectedProduct = homePage.reviewSelectedProduct();
+            reviewSelectedProduct.reviewSelectedProduct("Testing Title Review" , "Just a simple review of a selected product");
+
 
         }
 
@@ -353,37 +238,20 @@ public class TestNopCommerce
         @Test
         public void sendProductEmailToFriend() {
 
-            WebElement login = chrome.findElement(By.className("ico-login"));
-            login.click();
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("login-button")));
-            WebElement titleVisible = chrome.findElement(By.className("page-title"));
-            assertEquals(titleVisible.getText() , "Welcome, Please Sign In!");
-            WebElement loginEmail = chrome.findElement(By.id("Email"));
-            loginEmail.sendKeys("testing2002@testing.com");
-            WebElement loginPassword = chrome.findElement(By.id("Password"));
-            loginPassword.sendKeys("Testing!");
-            WebElement loginUser = chrome.findElement(By.className("login-button"));
-            loginUser.click();
-            WebElement clickProduct = chrome.findElement(By.xpath("//a[@href='/electronics']"));
-            clickProduct.click();
-            WebElement clickCellPhone = chrome.findElement(By.linkText("Cell phones"));
-            clickCellPhone.click();
-            WebElement selectedCellPhone = chrome.findElement(By.linkText("HTC One M8 Android L 5.0 Lollipop"));
-            selectedCellPhone.click();
-            WebElement emailAFriend = chrome.findElement(By.className("email-a-friend-button"));
-            emailAFriend.click();
-            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.xpath("//a[@href='/htc-one-m8-android-l-50-lollipop']")));
-            WebElement friendEmail = chrome.findElement(By.id("FriendEmail"));
-            friendEmail.sendKeys("emailfriend@test.com");
-            WebElement yourEmailDisplayed = chrome.findElement(By.className("your-email"));
-            assertTrue(yourEmailDisplayed.isDisplayed());
-            WebElement personalMessage = chrome.findElement(By.id("PersonalMessage"));
-            personalMessage.sendKeys("Just a testing message for email product to a friend");
-            WebElement sendEmailButton = chrome.findElement(By.className("send-email-a-friend-button"));
-            sendEmailButton.click();
-            wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("page-title")));
-            WebElement emailSuccessfullySent = chrome.findElement(By.className("result"));
-            assertEquals(emailSuccessfullySent.getText() , "Your message has been sent.");
+
+            loginSomeUser = homePage.login();
+            assertTrue(homePage.loginTitleIsDisplayed());
+            loginSomeUser.loginUser("testing2002@testing.com" , "Testing$");
+            resultProductPage = homePage.results();
+            resultProductPage.SelectCellPhone();
+            productSelection = homePage.productSelected();
+            productSelection.CellPhoneSelectionHTC();
+            itemSelected = homePage.itemSelected();
+            itemSelected.HTCOneMini();
+            emailAFriendPage = homePage.emailAFriendPage();
+            emailAFriendPage.EmailAFriend("test987@test.com" , "Just a message for testing");
+
+            
         }
 
         @AfterMethod

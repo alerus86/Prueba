@@ -10,36 +10,60 @@ import org.testng.Assert;
 public class ProductSelectionPage extends BasePage {
 
     @FindBy (linkText = "Nokia Lumia 1020")
-    private WebElement selectedCellPhone;
-    @FindBy (css = "input[onclick = 'return AjaxCart.addproducttocart_catalog(\\\"/addproducttocart/catalog/12/2/1\\\"),!1']")
+    private WebElement selectedCellPhoneNokia;
+    @FindBy (linkText = "HTC One M8 Android L 5.0 Lollipop")
+    private WebElement selectedCellPhoneHTC;
+    @FindBy (xpath = "//a[contains(text(),'Sound Forge')]/ancestor::div[contains(@class,'product-item')]")
     private WebElement addToWishlist1;
     @FindBy (id = "bar-notification")
     private WebElement alertSuccess;
-    @FindBy (css = "input[onclick = 'return AjaxCart.addproducttocart_catalog(\\\"/addproducttocart/catalog/42/2/1\\\"),!1']")
+    @FindBy (xpath = "//a[contains(text(),'Vintage Style')]/ancestor::div[contains(@class,'product-item')]")
     private WebElement addToWishlist2;
     @FindBy (className = "ico-wishlist")
     private WebElement wishListbutton;
-    @FindBy (css = "input[onclick = 'return AjaxCart.addproducttocomparelist(\\\"/compareproducts/add/12\\\"),!1']")
+    @FindBy (xpath = "//a[contains(text(),'Sound Forge')]/ancestor::div[contains(@class,'product-item')]")
     private WebElement compareProduct;
-    @FindBy (css = "input[onclick = 'return AjaxCart.addproducttocomparelist(\\\"/compareproducts/add/42\\\"),!1']")
+    @FindBy (xpath = "//a[contains(text(),'Vintage Style')]/ancestor::div[contains(@class,'product-item')]")
     private WebElement compareProduct2;
     @FindBy (linkText = "Compare products list")
     private WebElement compareProductButton;
+    @FindBy (xpath = "//a[@href='/fahrenheit-451-by-ray-bradbury']")
+    private WebElement selectedBook;
+    @FindBy (xpath = "//a[@href=\"/nikon-d5500-dslr\"]")
+    private WebElement selectedCamera;
 
 
 
-    public void CellPhoneSelection () {
+    public void CellPhoneSelectionNokia () {
 
-        selectedCellPhone.click();
+        selectedCellPhoneNokia.click();
+    }
+
+    public void CellPhoneSelectionHTC() {
+
+        selectedCellPhoneHTC.click();
+
+    }
+
+    public void BookSelection () {
+
+        selectedBook.click();
+
+    }
+
+    public void SelectedCamera(){
+
+        selectedCamera.click();
     }
 
     public void ProductAddToWishlist () {
 
-        addToWishlist1.click();
+
+        addToWishlist1.findElement(By.cssSelector("input[value='Add to wishlist']")).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated((By.id("bar-notification"))));
         Assert.assertEquals(alertSuccess.getText() , "The product has been added to your wishlist");
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("bar-notification-container")));
-        addToWishlist2.click();
+        addToWishlist2.findElement(By.cssSelector("input[value='Add to wishlist']")).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated((By.id("bar-notification"))));
         Assert.assertEquals(alertSuccess.getText() , "The product has been added to your wishlist");
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("bar-notification-container")));
