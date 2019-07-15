@@ -14,6 +14,8 @@ public class ResultProductPage extends BasePage {
     private WebElement clickBook;
     @FindBy (linkText = "Camera & photo")
     private WebElement clickCameraAndPhoto;
+    @FindBy (id = "small-searchterms")
+    private WebElement searchProductBar;
 
 
     public void SelectCellPhone() {
@@ -32,6 +34,13 @@ public class ResultProductPage extends BasePage {
 
         clickButtonProductElectronics.click();
         clickCameraAndPhoto.click();
+
+    }
+
+    public void DataProviderProductSearch(String productSearch) {
+
+        searchProductBar.sendKeys(productSearch);
+        searchProductBar.submit();
 
     }
 

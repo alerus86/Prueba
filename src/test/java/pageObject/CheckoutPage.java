@@ -59,24 +59,57 @@ public class CheckoutPage extends BasePage {
     private WebElement updateCart;
     @FindBy (className = "page-title")
     private WebElement resultDeleteItems;
+    @FindBy (id = "billing-address-select")
+    private WebElement addressDropdown;
+    @FindBy (css = "input[onclick='Billing.save()']")
+    private WebElement continueButtonSelectedAddress;
+    @FindBy (css = "input[onclick='Shipping.save()']")
+    private WebElement continueButtonSelectedAddress2;
+
 
     public void checkoutProduct (String countryCombo , String city , String address1 , String zipCode , String phoneNumber) {
 
+        boolean primeraVez;
         unCheckShippingAddress.click();
-        Select comboCountry = new Select(selectCountryCombo);
-        comboCountry.selectByValue(countryCombo);
-        this.city.sendKeys(city);
-        this.address1.sendKeys(address1);
-        this.zipCode.sendKeys(zipCode);
-        this.phoneNumber.sendKeys(phoneNumber);
-        continueButton.click();
-        continueButtonStep2.click();
-        shippingButton.click();
-        continueButtonStep3.click();
-        continueButtonStep4.click();
-        continueButtonStep5.click();
-        continueButtonStep6.click();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("page-title")));
+        try {
+
+            primeraVez = true;
+            Select comboCountry = new Select(selectCountryCombo);
+            comboCountry.selectByValue(countryCombo);
+
+        }
+        catch (Exception e) {
+
+            primeraVez=false;
+
+        }
+        if (primeraVez) {
+
+            this.city.sendKeys(city);
+            this.address1.sendKeys(address1);
+            this.zipCode.sendKeys(zipCode);
+            this.phoneNumber.sendKeys(phoneNumber);
+            continueButton.click();
+            continueButtonStep2.click();
+            shippingButton.click();
+            continueButtonStep3.click();
+            continueButtonStep4.click();
+            continueButtonStep5.click();
+            continueButtonStep6.click();
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("page-title")));
+        }
+        else {
+
+            Select comboAddress = new Select(addressDropdown);
+            comboAddress.selectByIndex(0);
+            continueButtonSelectedAddress.click();
+            continueButtonSelectedAddress2.click();
+            continueButtonStep3.click();
+            continueButtonStep4.click();
+            continueButtonStep5.click();
+            continueButtonStep6.click();
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("page-title")));
+        }
 
 
     }
@@ -84,27 +117,57 @@ public class CheckoutPage extends BasePage {
     public void checkoutProductCreditCard (String countryCombo , String city , String address1 , String zipCode , String phoneNumber , String cardHolderName
             , String cardNumber , String monthExpirationCard , String yearExpirationCard , String cardCode){
 
+        boolean primeraVez;
         unCheckShippingAddress.click();
-        Select comboCountry = new Select(selectCountryCombo);
-        comboCountry.selectByValue(countryCombo);
-        this.city.sendKeys(city);
-        this.address1.sendKeys(address1);
-        this.zipCode.sendKeys(zipCode);
-        this.phoneNumber.sendKeys(phoneNumber);
-        continueButton.click();
-        continueButtonStep2.click();
-        shippingButton.click();
-        continueButtonStep3.click();
-        creditCardPayment.click();
-        continueButtonStep4.click();
-        this.cardHolderName.sendKeys(cardHolderName);
-        this.cardNumber.sendKeys(cardNumber);
-        this.monthExpirationCard.sendKeys(monthExpirationCard);
-        this.yearExpirationCard.sendKeys(yearExpirationCard);
-        this.cardCode.sendKeys(cardCode);
-        continueButtonStep5.click();
-        continueButtonStep6.click();
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("page-title")));
+        try {
+            primeraVez = true;
+            Select comboCountry = new Select(selectCountryCombo);
+            comboCountry.selectByValue(countryCombo);
+
+        }
+        catch (Exception e){
+            primeraVez = false;
+        }
+        if (primeraVez) {
+            this.city.sendKeys(city);
+            this.address1.sendKeys(address1);
+            this.zipCode.sendKeys(zipCode);
+            this.phoneNumber.sendKeys(phoneNumber);
+            continueButton.click();
+            continueButtonStep2.click();
+            shippingButton.click();
+            continueButtonStep3.click();
+            wait.until(ExpectedConditions.visibilityOfElementLocated((By.id("paymentmethod_1"))));
+            creditCardPayment.click();
+            continueButtonStep4.click();
+            this.cardHolderName.sendKeys(cardHolderName);
+            this.cardNumber.sendKeys(cardNumber);
+            this.monthExpirationCard.sendKeys(monthExpirationCard);
+            this.yearExpirationCard.sendKeys(yearExpirationCard);
+            this.cardCode.sendKeys(cardCode);
+            continueButtonStep5.click();
+            continueButtonStep6.click();
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("page-title")));
+        }
+        else {
+            Select comboAddress = new Select(addressDropdown);
+            comboAddress.selectByIndex(0);
+            continueButtonSelectedAddress.click();
+            continueButtonSelectedAddress2.click();
+            continueButtonStep3.click();
+            wait.until(ExpectedConditions.visibilityOfElementLocated((By.id("paymentmethod_1"))));
+            creditCardPayment.click();
+            continueButtonStep4.click();
+            this.cardHolderName.sendKeys(cardHolderName);
+            this.cardNumber.sendKeys(cardNumber);
+            this.monthExpirationCard.sendKeys(monthExpirationCard);
+            this.yearExpirationCard.sendKeys(yearExpirationCard);
+            this.cardCode.sendKeys(cardCode);
+            continueButtonStep5.click();
+            continueButtonStep6.click();
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("page-title")));
+
+        }
 
     }
 

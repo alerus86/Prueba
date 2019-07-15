@@ -22,6 +22,10 @@ public class ItemSelectedResult extends BasePage {
     private WebElement addReview;
     @FindBy (css = "input[value='Email a friend']")
     private WebElement emailToFriend;
+    @FindBy (xpath = "//a[contains(text(),'Digital Storm')]/ancestor::div[contains(@class,'product-item')]")
+    private WebElement productDataProvider;
+    @FindBy (xpath = "//a[contains(text(),'Vintage Style Engagement Ring')]/ancestor::div[contains(@class,'product-item')]")
+    private WebElement productDataProvider2;
 
 
     public void NokiCellPhone () {
@@ -53,6 +57,18 @@ public class ItemSelectedResult extends BasePage {
     public void HTCOneMini () {
 
         emailToFriend.click();
+
+    }
+
+    public void SelectedProductDataProvider (){
+
+        productDataProvider.findElement(By.cssSelector("input[value='Add to cart']")).click();
+        wait.until(ExpectedConditions.visibilityOfElementLocated((By.id("bar-notification"))));
+        Assert.assertEquals(alertSuccess.getText() , "The product has been added to your shopping cart");
+        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("bar-notification-container")));
+        shoppingCart.click();
+        productDataProvider2.findElement(By.cssSelector("input[value='Add to cart']")).click();
+        shoppingCart.click();
 
     }
 
