@@ -1,5 +1,6 @@
 package pageObject;
 
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -118,6 +119,7 @@ public class CheckoutPage extends BasePage {
             , String cardNumber , String monthExpirationCard , String yearExpirationCard , String cardCode){
 
         boolean primeraVez;
+        boolean alertDisplay;
         unCheckShippingAddress.click();
         try {
             primeraVez = true;
@@ -137,7 +139,7 @@ public class CheckoutPage extends BasePage {
             continueButtonStep2.click();
             shippingButton.click();
             continueButtonStep3.click();
-            wait.until(ExpectedConditions.visibilityOfElementLocated((By.id("paymentmethod_1"))));
+            wait.until(ExpectedConditions.elementToBeClickable((By.id("paymentmethod_1"))));
             creditCardPayment.click();
             continueButtonStep4.click();
             this.cardHolderName.sendKeys(cardHolderName);
@@ -146,8 +148,24 @@ public class CheckoutPage extends BasePage {
             this.yearExpirationCard.sendKeys(yearExpirationCard);
             this.cardCode.sendKeys(cardCode);
             continueButtonStep5.click();
-            continueButtonStep6.click();
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("page-title")));
+
+            try {
+                continueButtonStep6.click();
+                wait.until(ExpectedConditions.alertIsPresent());
+                alertDisplay = true;
+                Alert alert1 = chrome.switchTo().alert();
+                alert1.accept();
+                wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("page-title")));
+
+            }
+            catch (Exception e) {
+                alertDisplay = false;
+            }
+
+
+
+
+
         }
         else {
             Select comboAddress = new Select(addressDropdown);
@@ -155,7 +173,7 @@ public class CheckoutPage extends BasePage {
             continueButtonSelectedAddress.click();
             continueButtonSelectedAddress2.click();
             continueButtonStep3.click();
-            wait.until(ExpectedConditions.visibilityOfElementLocated((By.id("paymentmethod_1"))));
+            wait.until(ExpectedConditions.elementToBeClickable((By.id("paymentmethod_1"))));
             creditCardPayment.click();
             continueButtonStep4.click();
             this.cardHolderName.sendKeys(cardHolderName);
@@ -164,8 +182,22 @@ public class CheckoutPage extends BasePage {
             this.yearExpirationCard.sendKeys(yearExpirationCard);
             this.cardCode.sendKeys(cardCode);
             continueButtonStep5.click();
-            continueButtonStep6.click();
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("page-title")));
+
+            try {
+
+                alertDisplay = true;
+                continueButtonStep6.click();
+                wait.until(ExpectedConditions.alertIsPresent());
+                Alert alert1 = chrome.switchTo().alert();
+                alert1.accept();
+                wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("page-title")));
+                continueButtonStep6.click();
+            }
+            catch (Exception e) {
+                alertDisplay = false;
+            }
+
+
 
         }
 

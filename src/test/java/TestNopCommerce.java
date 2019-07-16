@@ -122,25 +122,13 @@ public class TestNopCommerce
             resultProductPage = homePage.results();
             resultProductPage.DataProviderProductSearch(productSearch);
             itemSelected = homePage.itemSelected();
-            itemSelected.SelectedProductDataProvider();
+            itemSelected.SelectedProductDataProvider(productSearch);
             shoppingCart = homePage.shoppingCartPage();
             shoppingCart.CheckoutProduct();
             checkoutPage = homePage.checkoutPage();
             checkoutPage.checkoutProductCreditCard(countryCombo , city , address1 , zipCode , phoneNumber ,
                     cardHolderName , cardNumber , monthExpirationCard , yearExpirationCard , cardCode);
             assertTrue(checkoutPage.orderConfirmationSuccess());
-
-
-            /*productSelection = homePage.productSelected();
-            productSelection.CellPhoneSelectionNokia();
-            itemSelected = homePage.itemSelected();
-            itemSelected.NokiCellPhone();
-            shoppingCart = homePage.shoppingCartPage();
-            shoppingCart.CheckoutProduct();
-            checkoutPage = homePage.checkoutPage();
-            checkoutPage.checkoutProductCreditCard("235" , "Test" , "Testing apto 001" , "12345" , "12345678" ,
-                    "Testing Tester" , "0000000000000000" , "12" , "2022" , "1234");
-            assertTrue(checkoutPage.orderConfirmationSuccess());*/
 
 
         }
