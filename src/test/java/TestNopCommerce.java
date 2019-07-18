@@ -97,55 +97,58 @@ public class TestNopCommerce
             loginSomeUser.loginUser("testing2002@testing.com" , "Testing$");
             resultProductPage = homePage.results();
             resultProductPage.SelectCellPhone();
+            assertTrue(resultProductPage.ResultProductPageTitleDisplayed());
             productSelection = homePage.productSelected();
+            assertTrue(productSelection.ProductSelectionPageDisplayed());
             productSelection.CellPhoneSelectionNokia();
             itemSelected = homePage.itemSelected();
+            assertTrue(itemSelected.ProductSelectedTitle());
             itemSelected.NokiCellPhone();
             shoppingCart = homePage.shoppingCartPage();
+            assertTrue(shoppingCart.ShoppingCartTitleDisplayed());
             shoppingCart.CheckoutProduct();
             checkoutPage = homePage.checkoutPage();
+            assertTrue(shoppingCart.ShoppingCartTitleDisplayed());
             checkoutPage.checkoutProduct("235" , "Test" , "Testing apto 001" , "12345" , "12345678");
-            assertTrue(checkoutPage.orderConfirmationSuccess());
+            assertTrue(checkoutPage.OrderConfirmationSuccess());
 
 
         }
 
         //CP3
-        @Test(dataProvider = "SearchProduct" , dataProviderClass = DataProviderClass.class)
-        public void checkOutConTarjetaDeCredito (String userLog , String passwordUser, String productSearch, String countryCombo, String city,
-                                                 String address1, String zipCode, String phoneNumber, String cardHolderName, String cardNumber,
-                                                 String monthExpirationCard, String yearExpirationCard, String cardCode) {
+        @Test
+        public void checkOutConTarjetaDeCredito () {
 
             loginSomeUser = homePage.login();
             assertTrue(homePage.loginTitleIsDisplayed());
-            loginSomeUser.loginUser(userLog, passwordUser);
+            loginSomeUser.loginUser("testing2002@testing.com", "Testing$");
             resultProductPage = homePage.results();
-            resultProductPage.DataProviderProductSearch(productSearch);
+            resultProductPage.SelectBook();
             itemSelected = homePage.itemSelected();
-            itemSelected.SelectedProductDataProvider(productSearch);
+            itemSelected.FahrenheitBook();
             shoppingCart = homePage.shoppingCartPage();
             shoppingCart.CheckoutProduct();
             checkoutPage = homePage.checkoutPage();
-            checkoutPage.checkoutProductCreditCard(countryCombo , city , address1 , zipCode , phoneNumber ,
-                    cardHolderName , cardNumber , monthExpirationCard , yearExpirationCard , cardCode);
-            assertTrue(checkoutPage.orderConfirmationSuccess());
+            checkoutPage.checkoutProductCreditCard("235" , "Test" , "Testing apto 001" , "12345" , "12345678" ,
+                    "Testing Tester" , "0000000000000000" , "12" , "2022" , "1234");
+            assertTrue(checkoutPage.OrderConfirmationSuccess());
 
 
         }
 
         //CP4
-        @Test
-        public void agregarWishlist (){
+        @Test(dataProvider = "AddToWishlist" , dataProviderClass = DataProviderClass.class)
+        public void agregarWishlist (String userMail , String userPassword , String productSearch){
 
 
             loginSomeUser = homePage.login();
             assertTrue(homePage.loginTitleIsDisplayed());
-            loginSomeUser.loginUser("testing2002@testing.com" , "Testing$");
+            loginSomeUser.loginUser(userMail , userPassword);
             searchAndResultPage = homePage.searchAndResultPage();
-            searchAndResultPage.searchProduct("ring");
+            searchAndResultPage.searchProduct(productSearch);
             assertTrue(searchAndResultPage.resultsProductsDisplayed());
             productSelection = homePage.productSelected();
-            productSelection.ProductAddToWishlist();
+            productSelection.SelectedProductDataProvider(productSearch);
 
         }
 

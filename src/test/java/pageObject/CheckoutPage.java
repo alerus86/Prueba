@@ -66,6 +66,8 @@ public class CheckoutPage extends BasePage {
     private WebElement continueButtonSelectedAddress;
     @FindBy (css = "input[onclick='Shipping.save()']")
     private WebElement continueButtonSelectedAddress2;
+    @FindBy (className = "page-title")
+    private WebElement shoppingCartTitle;
 
 
     public void checkoutProduct (String countryCombo , String city , String address1 , String zipCode , String phoneNumber) {
@@ -87,13 +89,19 @@ public class CheckoutPage extends BasePage {
         if (primeraVez) {
 
             this.city.sendKeys(city);
+            assertEquals(city , "Test");
             this.address1.sendKeys(address1);
+            assertEquals(address1 , "Testing apto 001");
             this.zipCode.sendKeys(zipCode);
+            assertEquals(zipCode , "12345");
             this.phoneNumber.sendKeys(phoneNumber);
+            assertEquals(phoneNumber , "12345678");
             continueButton.click();
             continueButtonStep2.click();
             shippingButton.click();
             continueButtonStep3.click();
+            wait.until(ExpectedConditions.elementToBeClickable((By.id("paymentmethod_0"))));
+            wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("input[onclick = 'PaymentMethod.save()']")));
             continueButtonStep4.click();
             continueButtonStep5.click();
             continueButtonStep6.click();
@@ -106,6 +114,8 @@ public class CheckoutPage extends BasePage {
             continueButtonSelectedAddress.click();
             continueButtonSelectedAddress2.click();
             continueButtonStep3.click();
+            wait.until(ExpectedConditions.elementToBeClickable((By.id("paymentmethod_0"))));
+            wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("input[onclick = 'PaymentMethod.save()']")));
             continueButtonStep4.click();
             continueButtonStep5.click();
             continueButtonStep6.click();
@@ -119,7 +129,6 @@ public class CheckoutPage extends BasePage {
             , String cardNumber , String monthExpirationCard , String yearExpirationCard , String cardCode){
 
         boolean primeraVez;
-        boolean alertDisplay;
         unCheckShippingAddress.click();
         try {
             primeraVez = true;
@@ -148,23 +157,8 @@ public class CheckoutPage extends BasePage {
             this.yearExpirationCard.sendKeys(yearExpirationCard);
             this.cardCode.sendKeys(cardCode);
             continueButtonStep5.click();
-
-            try {
-                continueButtonStep6.click();
-                wait.until(ExpectedConditions.alertIsPresent());
-                alertDisplay = true;
-                Alert alert1 = chrome.switchTo().alert();
-                alert1.accept();
-                wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("page-title")));
-
-            }
-            catch (Exception e) {
-                alertDisplay = false;
-            }
-
-
-
-
+            continueButtonStep6.click();
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("page-title")));
 
         }
         else {
@@ -182,25 +176,10 @@ public class CheckoutPage extends BasePage {
             this.yearExpirationCard.sendKeys(yearExpirationCard);
             this.cardCode.sendKeys(cardCode);
             continueButtonStep5.click();
-
-            try {
-
-                alertDisplay = true;
-                continueButtonStep6.click();
-                wait.until(ExpectedConditions.alertIsPresent());
-                Alert alert1 = chrome.switchTo().alert();
-                alert1.accept();
-                wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("page-title")));
-                continueButtonStep6.click();
-            }
-            catch (Exception e) {
-                alertDisplay = false;
-            }
-
-
-
+            continueButtonStep6.click();
+            wait.until(ExpectedConditions.alertIsPresent());
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("page-title")));
         }
-
     }
 
     public void deleteCheckoutProduct() {
@@ -213,7 +192,8 @@ public class CheckoutPage extends BasePage {
 
     }
 
-    public boolean orderConfirmationSuccess(){
+    public boolean ShoppingCartTitleDisplayed () {return shoppingCartTitle.isDisplayed();}
+    public boolean OrderConfirmationSuccess(){
         return orderConfirmation.isDisplayed();
     }
 

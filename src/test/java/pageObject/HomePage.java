@@ -100,6 +100,7 @@ public class HomePage extends BasePage {
         return loginTitlePage.isDisplayed();
     }
 
+
     public HomePage(WebDriver chrome) {
         super(chrome);
     }

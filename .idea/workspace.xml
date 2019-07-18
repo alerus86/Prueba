@@ -3,12 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="165200e7-6d7c-433d-8fb0-660f693366fc" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/DataProviderClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/DataProviderClass.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/TestNopCommerce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestNopCommerce.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/CheckoutPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/HomePage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/ItemSelectedResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/ItemSelectedResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/ProductSelectionPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/ProductSelectionPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/RegisterUserPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/RegisterUserPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/ResultProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/ResultProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/SearchAndResultPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/SearchAndResultPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/ShoppingCartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/ShoppingCartPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/DataProviderClass.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/DataProviderClass.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/TestNopCommerce.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestNopCommerce.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/CheckoutPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObject/CheckoutPage.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/ItemSelectedResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObject/ItemSelectedResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/ProductSelectionPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObject/ProductSelectionPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/ResultProductPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObject/ResultProductPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/SearchAndResultPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObject/SearchAndResultPage.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -26,11 +37,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestNopCommerce.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="633">
-              <caret line="130" column="36" selection-start-line="130" selection-start-column="36" selection-end-line="130" selection-end-column="36" />
+            <state relative-caret-position="378">
+              <caret line="110" column="64" selection-start-line="110" selection-start-column="64" selection-end-line="110" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -42,10 +53,19 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/HomePage.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="123">
-              <caret line="29" selection-start-line="29" selection-end-line="29" />
+              <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/RegisterUserPage.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-359">
+              <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" selection-end-column="34" />
             </state>
           </provider>
         </entry>
@@ -53,22 +73,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/CheckoutPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="998">
-              <caret line="216" selection-start-line="216" selection-end-line="216" />
+            <state relative-caret-position="185">
+              <caret line="193" column="43" selection-start-line="193" selection-start-column="19" selection-end-line="193" selection-end-column="43" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#8088#8089#0" expanded="true" />
-                <element signature="e#8211#8212#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/BasePage.java">
+        <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/ShoppingCartPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="137">
-              <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+            <state relative-caret-position="233">
+              <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -76,14 +94,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/ItemSelectedResult.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="318">
-              <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
+            <state relative-caret-position="123">
+              <caret line="70" column="39" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#2820#2821#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -92,20 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/DataProviderClass.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="18" column="97" selection-start-line="18" selection-start-column="97" selection-end-line="18" selection-end-column="97" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/ShoppingCartPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="131">
-              <caret line="15" selection-start-line="15" selection-end-line="15" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="272">
+              <caret line="19" column="111" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="112" />
             </state>
           </provider>
         </entry>
@@ -113,8 +118,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/ResultProductPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="43" selection-start-line="43" selection-end-line="43" />
+            <state relative-caret-position="131">
+              <caret line="40" column="50" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -125,7 +130,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/MyAccountPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
+            <state relative-caret-position="204">
               <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -137,10 +142,12 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/ProductSelectionPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="952">
-              <caret line="61" column="81" selection-start-line="61" selection-start-column="51" selection-end-line="61" selection-end-column="81" />
+            <state relative-caret-position="148">
+              <caret line="86" column="48" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3726#3727#0" expanded="true" />
+                <element signature="e#3773#3774#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -171,23 +178,23 @@
         <option value="$PROJECT_DIR$/src/test/java/PageObject/BasePage.java" />
         <option value="$PROJECT_DIR$/src/test/java/PageObject/RegisterUserPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pageObject/BasePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pageObject/ShoppingCartPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pageObject/SearchResultPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pageObject/CompareProductPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pageObject/LoginUser.java" />
         <option value="$PROJECT_DIR$/src/test/java/pageObject/MyAccountPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pageObject/SearchAndResultPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pageObject/ReviewSelectedProductPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pageObject/ProductSelectionPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pageObject/EmailAFriendPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pageObject/HomePage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/pageObject/RegisterUserPage.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/pageObject/SearchAndResultPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/DataProviderClass.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pageObject/RegisterUserPage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pageObject/HomePage.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pageObject/ProductSelectionPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pageObject/ResultProductPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pageObject/ItemSelectedResult.java" />
+        <option value="$PROJECT_DIR$/src/test/java/pageObject/ShoppingCartPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/pageObject/CheckoutPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestNopCommerce.java" />
-        <option value="$PROJECT_DIR$/src/test/java/DataProviderClass.java" />
       </list>
     </option>
   </component>
@@ -275,7 +282,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.TestNopCommerce.checkOutConTarjetaDeCredito">
+  <component name="RunManager" selected="TestNG.TestNopCommerce.checkOutConEfectivo">
+    <configuration name="TestNopCommerce.agregarWishlist" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="nopCommerce" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestNopCommerce" />
+      <option name="METHOD_NAME" value="agregarWishlist" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestNopCommerce.checkOutConEfectivo" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="nopCommerce" />
       <option name="PACKAGE_NAME" value="" />
@@ -300,6 +319,18 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestNopCommerce.compareProducts" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="nopCommerce" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestNopCommerce" />
+      <option name="METHOD_NAME" value="compareProducts" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestNopCommerce.nuevoUsuarioRegistrado" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="nopCommerce" />
       <option name="PACKAGE_NAME" value="" />
@@ -312,37 +343,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestNopCommerce.reviewProduct" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="nopCommerce" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestNopCommerce" />
-      <option name="METHOD_NAME" value="reviewProduct" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="TestNopCommerce.sendProductEmailToFriend" type="TestNG" temporary="true" nameIsGenerated="true">
-      <module name="nopCommerce" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestNopCommerce" />
-      <option name="METHOD_NAME" value="sendProductEmailToFriend" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.TestNopCommerce.checkOutConTarjetaDeCredito" />
         <item itemvalue="TestNG.TestNopCommerce.checkOutConEfectivo" />
+        <item itemvalue="TestNG.TestNopCommerce.agregarWishlist" />
+        <item itemvalue="TestNG.TestNopCommerce.compareProducts" />
+        <item itemvalue="TestNG.TestNopCommerce.checkOutConTarjetaDeCredito" />
         <item itemvalue="TestNG.TestNopCommerce.nuevoUsuarioRegistrado" />
-        <item itemvalue="TestNG.TestNopCommerce.sendProductEmailToFriend" />
-        <item itemvalue="TestNG.TestNopCommerce.reviewProduct" />
       </list>
     </recent_temporary>
   </component>
@@ -360,35 +367,35 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestNopCommerce_checkOutConTarjetaDeCredito - 2019.07.15 at 21h 24m 09s.xml">
-      <configuration name="TestNopCommerce.checkOutConTarjetaDeCredito" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_checkOutConEfectivo - 2019.07.18 at 15h 26m 46s.xml">
+      <configuration name="TestNopCommerce.checkOutConEfectivo" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_checkOutConTarjetaDeCredito - 2019.07.15 at 21h 29m 53s.xml">
-      <configuration name="TestNopCommerce.checkOutConTarjetaDeCredito" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_checkOutConEfectivo - 2019.07.18 at 15h 28m 06s.xml">
+      <configuration name="TestNopCommerce.checkOutConEfectivo" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_checkOutConTarjetaDeCredito - 2019.07.15 at 21h 32m 42s.xml">
-      <configuration name="TestNopCommerce.checkOutConTarjetaDeCredito" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_checkOutConEfectivo - 2019.07.18 at 15h 31m 18s.xml">
+      <configuration name="TestNopCommerce.checkOutConEfectivo" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_checkOutConTarjetaDeCredito - 2019.07.15 at 21h 35m 48s.xml">
-      <configuration name="TestNopCommerce.checkOutConTarjetaDeCredito" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_checkOutConEfectivo - 2019.07.18 at 15h 34m 11s.xml">
+      <configuration name="TestNopCommerce.checkOutConEfectivo" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_checkOutConTarjetaDeCredito - 2019.07.15 at 21h 44m 17s.xml">
-      <configuration name="TestNopCommerce.checkOutConTarjetaDeCredito" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_checkOutConEfectivo - 2019.07.18 at 15h 35m 28s.xml">
+      <configuration name="TestNopCommerce.checkOutConEfectivo" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_checkOutConTarjetaDeCredito - 2019.07.15 at 21h 53m 14s.xml">
-      <configuration name="TestNopCommerce.checkOutConTarjetaDeCredito" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_checkOutConEfectivo - 2019.07.18 at 15h 37m 03s.xml">
+      <configuration name="TestNopCommerce.checkOutConEfectivo" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_checkOutConTarjetaDeCredito - 2019.07.15 at 21h 54m 30s.xml">
-      <configuration name="TestNopCommerce.checkOutConTarjetaDeCredito" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_checkOutConEfectivo - 2019.07.18 at 15h 41m 43s.xml">
+      <configuration name="TestNopCommerce.checkOutConEfectivo" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_checkOutConTarjetaDeCredito - 2019.07.15 at 21h 56m 07s.xml">
-      <configuration name="TestNopCommerce.checkOutConTarjetaDeCredito" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_checkOutConEfectivo - 2019.07.18 at 15h 42m 59s.xml">
+      <configuration name="TestNopCommerce.checkOutConEfectivo" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_checkOutConTarjetaDeCredito - 2019.07.15 at 21h 59m 28s.xml">
-      <configuration name="TestNopCommerce.checkOutConTarjetaDeCredito" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_checkOutConEfectivo - 2019.07.18 at 15h 54m 03s.xml">
+      <configuration name="TestNopCommerce.checkOutConEfectivo" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="TestNopCommerce_checkOutConTarjetaDeCredito - 2019.07.15 at 22h 22m 33s.xml">
-      <configuration name="TestNopCommerce.checkOutConTarjetaDeCredito" configurationId="TestNG" />
+    <history-entry file="TestNopCommerce_checkOutConEfectivo - 2019.07.18 at 15h 57m 20s.xml">
+      <configuration name="TestNopCommerce.checkOutConEfectivo" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView">
@@ -404,7 +411,7 @@
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49894738" visible="true" weight="0.21879195" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49894738" visible="true" weight="0.22550336" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -617,18 +624,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/SearchAndResultPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="10" lean-forward="true" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#435#436#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -656,16 +651,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/RegisterUserPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="20" column="23" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/CompareProductPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -686,60 +671,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/ResultProductPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="43" selection-start-line="43" selection-end-line="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/MyAccountPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/ProductSelectionPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="952">
-          <caret line="61" column="81" selection-start-line="61" selection-start-column="51" selection-end-line="61" selection-end-column="81" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/annotations/Test.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="130">
           <caret line="37" column="11" selection-start-line="37" selection-start-column="11" selection-end-line="37" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/HomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="123">
-          <caret line="29" selection-start-line="29" selection-end-line="29" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/ShoppingCartPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="131">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -753,17 +688,86 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/DataProviderClass.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/SearchAndResultPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
-          <caret line="18" column="97" selection-start-line="18" selection-start-column="97" selection-end-line="18" selection-end-column="97" />
+          <caret line="15" column="40" selection-start-line="15" selection-start-column="40" selection-end-line="15" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/TestNopCommerce.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/MyAccountPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="633">
-          <caret line="130" column="36" selection-start-line="130" selection-start-column="36" selection-end-line="130" selection-end-column="36" />
+        <state relative-caret-position="204">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/DataProviderClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="19" column="111" selection-start-line="19" selection-start-column="70" selection-end-line="19" selection-end-column="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/RegisterUserPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-359">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/ProductSelectionPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="148">
+          <caret line="86" column="48" selection-start-line="86" selection-start-column="19" selection-end-line="86" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3726#3727#0" expanded="true" />
+            <element signature="e#3773#3774#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/ResultProductPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="131">
+          <caret line="40" column="50" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="40" column="32" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/ItemSelectedResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="123">
+          <caret line="70" column="39" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/ShoppingCartPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="233">
+          <caret line="23" column="47" selection-start-line="23" selection-start-column="47" selection-end-line="23" selection-end-column="47" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -772,23 +776,20 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/CheckoutPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="998">
-          <caret line="216" selection-start-line="216" selection-end-line="216" />
+        <state relative-caret-position="185">
+          <caret line="193" column="43" selection-start-line="193" selection-start-column="19" selection-end-line="193" selection-end-column="43" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#8088#8089#0" expanded="true" />
-            <element signature="e#8211#8212#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/ItemSelectedResult.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestNopCommerce.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="70" column="8" selection-start-line="70" selection-start-column="8" selection-end-line="70" selection-end-column="8" />
+        <state relative-caret-position="378">
+          <caret line="110" column="64" selection-start-line="110" selection-start-column="64" selection-end-line="110" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#2820#2821#0" expanded="true" />
           </folding>
         </state>
       </provider>

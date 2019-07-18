@@ -31,6 +31,8 @@ public class ProductSelectionPage extends BasePage {
     private WebElement selectedBook;
     @FindBy (xpath = "//a[@href=\"/nikon-d5500-dslr\"]")
     private WebElement selectedCamera;
+    @FindBy (className = "page-title")
+    private WebElement productSelectionPageTitle;
 
 
 
@@ -56,33 +58,34 @@ public class ProductSelectionPage extends BasePage {
         selectedCamera.click();
     }
 
-    public void ProductAddToWishlist () {
+    public void SelectedProductDataProvider (String productSearch){
 
 
-        addToWishlist1.findElement(By.cssSelector("input[value='Add to wishlist']")).click();
+        WebElement productItem = chrome.findElement(By.xpath("//a[contains(text(),'"+ productSearch +"')]/ancestor::div[contains(@class,'product-item')]"));
+        wait.until(ExpectedConditions.elementToBeClickable((By.cssSelector("input[value='Add to wishlist']"))));
+        productItem.findElement(By.cssSelector("input[value='Add to wishlist']")).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated((By.id("bar-notification"))));
-        Assert.assertEquals(alertSuccess.getText() , "The product has been added to your wishlist");
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("bar-notification-container")));
-        addToWishlist2.findElement(By.cssSelector("input[value='Add to wishlist']")).click();
-        wait.until(ExpectedConditions.visibilityOfElementLocated((By.id("bar-notification"))));
-        Assert.assertEquals(alertSuccess.getText() , "The product has been added to your wishlist");
+        Assert.assertEquals(alertSuccess.getText(), "The product has been added to your wishlist");
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("bar-notification-container")));
         wishListbutton.click();
-
     }
 
     public void ProductCompareList () {
 
-        compareProduct.click();
+        compareProduct.findElement(By.cssSelector("input[value='Add to compare list']")).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated((By.id("bar-notification"))));
         Assert.assertEquals(alertSuccess.getText() , "The product has been added to your product comparison");
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("bar-notification-container")));
-        compareProduct2.click();
+        compareProduct2.findElement(By.cssSelector("input[value='Add to compare list']")).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated((By.id("bar-notification"))));
         Assert.assertEquals(alertSuccess.getText() , "The product has been added to your product comparison");
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("bar-notification-container")));
         compareProductButton.click();
 
+    }
+
+    public boolean ProductSelectionPageDisplayed () {
+        return productSelectionPageTitle.isDisplayed();
     }
 
 

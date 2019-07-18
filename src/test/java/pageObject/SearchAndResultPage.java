@@ -12,6 +12,8 @@ public class SearchAndResultPage extends BasePage {
     private WebElement searchElement;
     @FindBy (className = "item-grid")
     private WebElement resultsSearchProduct;
+    @FindBy (id = "small-searchterms")
+    private WebElement searchProductBar;
 
     public void searchProduct ( String searchElement) {
 
@@ -21,6 +23,12 @@ public class SearchAndResultPage extends BasePage {
 
     }
 
+    public void DataProviderProductSearch(String productSearch) {
+
+        searchProductBar.sendKeys(productSearch);
+        searchProductBar.submit();
+
+    }
 
 
     public boolean resultsProductsDisplayed (){

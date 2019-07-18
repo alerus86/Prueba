@@ -10,27 +10,23 @@ import org.testng.Assert;
 
 public class ItemSelectedResult extends BasePage {
 
-    @FindBy (id = "add-to-cart-button-20")
-    private WebElement addToCart;
     @FindBy (id = "bar-notification")
     private WebElement alertSuccess;
     @FindBy (className = "ico-cart")
     private WebElement shoppingCart;
-    @FindBy (id = "add-to-cart-button-37")
-    private WebElement addToCartBook;
     @FindBy (linkText = "Add your review")
     private WebElement addReview;
     @FindBy (css = "input[value='Email a friend']")
     private WebElement emailToFriend;
-    /*@FindBy (xpath = "//a[contains(text(),'Digital Storm')]/ancestor::div[contains(@class,'product-item')]")
-    private WebElement productDataProvider;
-    @FindBy (xpath = "//a[contains(text(),'Vintage Style Engagement Ring')]/ancestor::div[contains(@class,'product-item')]")
-    private WebElement productDataProvider2;*/
+    @FindBy (id = "add-to-cart-button-20")
+    private WebElement addToCartCellPhone;
+    @FindBy (className = "product-name")
+    private WebElement selectedProductTitle;
 
 
     public void NokiCellPhone () {
 
-        addToCart.click();
+        addToCartCellPhone.click();
         wait.until(ExpectedConditions.visibilityOfElementLocated((By.id("bar-notification"))));
         Assert.assertEquals(alertSuccess.getText() , "The product has been added to your shopping cart");
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("bar-notification-container")));
@@ -39,7 +35,8 @@ public class ItemSelectedResult extends BasePage {
 
     public void FahrenheitBook() {
 
-        addToCartBook.click();
+        WebElement addToCartBook = chrome.findElement(By.xpath("//a[contains(text(),'Fahrenheit 451 by Ray Bradbury')]/ancestor::div[contains(@class,'product-item')]"));
+        addToCartBook.findElement(By.cssSelector("input[value='Add to cart']")).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated((By.id("bar-notification"))));
         Assert.assertEquals(alertSuccess.getText() , "The product has been added to your shopping cart");
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("bar-notification-container")));
@@ -64,11 +61,16 @@ public class ItemSelectedResult extends BasePage {
 
 
         WebElement div = chrome.findElement(By.xpath("//a[contains(text(),'"+ productSearch +"')]/ancestor::div[contains(@class,'product-item')]"));
-        div.findElement(By.cssSelector("input[value='Add to cart']")).click();
+        div.findElement(By.cssSelector("input[value='Add to wishlist']")).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated((By.id("bar-notification"))));
-        Assert.assertEquals(alertSuccess.getText(), "The product has been added to your shopping cart");
+        Assert.assertEquals(alertSuccess.getText(), "The product has been added to your wishlist");
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("bar-notification-container")));
         shoppingCart.click();
+    }
+
+    public boolean ProductSelectedTitle () {
+
+        return selectedProductTitle.isDisplayed();
     }
 
 

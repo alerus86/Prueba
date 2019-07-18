@@ -10,11 +10,18 @@ public class ShoppingCartPage extends BasePage {
     private WebElement termsOfService;
     @FindBy (id = "checkout")
     private  WebElement checkoutButton;
+    @FindBy (className = "page-title")
+    private WebElement shoppingCartTitle;
 
     public void CheckoutProduct () {
 
         termsOfService.click();
         checkoutButton.click();
+    }
+
+    public boolean ShoppingCartTitleDisplayed(){
+
+        return shoppingCartTitle.isDisplayed();
     }
 
 

@@ -3,6 +3,7 @@ package pageObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import static org.testng.Assert.*;
 
 public class ResultProductPage extends BasePage {
 
@@ -14,8 +15,8 @@ public class ResultProductPage extends BasePage {
     private WebElement clickBook;
     @FindBy (linkText = "Camera & photo")
     private WebElement clickCameraAndPhoto;
-    @FindBy (id = "small-searchterms")
-    private WebElement searchProductBar;
+    @FindBy (className = "page-title")
+    private WebElement electronicTitle;
 
 
     public void SelectCellPhone() {
@@ -37,12 +38,11 @@ public class ResultProductPage extends BasePage {
 
     }
 
-    public void DataProviderProductSearch(String productSearch) {
+    public boolean ResultProductPageTitleDisplayed () {
 
-        searchProductBar.sendKeys(productSearch);
-        searchProductBar.submit();
-
+        return electronicTitle.isDisplayed();
     }
+
 
     public ResultProductPage(WebDriver chrome) {
         super(chrome);
