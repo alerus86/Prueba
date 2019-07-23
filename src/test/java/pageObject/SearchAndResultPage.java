@@ -14,6 +14,8 @@ public class SearchAndResultPage extends BasePage {
     private WebElement resultsSearchProduct;
     @FindBy (id = "small-searchterms")
     private WebElement searchProductBar;
+    @FindBy (className = "page-title")
+    private WebElement searchTitleDisplayed;
 
     public void searchProduct ( String searchElement) {
 
@@ -31,9 +33,14 @@ public class SearchAndResultPage extends BasePage {
     }
 
 
-    public boolean resultsProductsDisplayed (){
+    public boolean ResultsProductsDisplayed (){
 
         return resultsSearchProduct.isDisplayed();
+    }
+
+    public boolean SearchTitleDisplayed () {
+
+        return searchTitleDisplayed.isDisplayed();
     }
 
     public SearchAndResultPage(WebDriver chrome) {

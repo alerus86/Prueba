@@ -1,6 +1,7 @@
 package pageObject;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -33,6 +34,8 @@ public class ProductSelectionPage extends BasePage {
     private WebElement selectedCamera;
     @FindBy (className = "page-title")
     private WebElement productSelectionPageTitle;
+    @FindBy (className = "page-title")
+    private WebElement wishlistTitleDisplayed;
 
 
 
@@ -63,11 +66,14 @@ public class ProductSelectionPage extends BasePage {
 
         WebElement productItem = chrome.findElement(By.xpath("//a[contains(text(),'"+ productSearch +"')]/ancestor::div[contains(@class,'product-item')]"));
         wait.until(ExpectedConditions.elementToBeClickable((By.cssSelector("input[value='Add to wishlist']"))));
+        JavascriptExecutor jse = (JavascriptExecutor) chrome;
+        jse.executeScript("arguments[0].scrollIntoView(true);", productItem.findElement(By.cssSelector("input[value='Add to wishlist']")));
         productItem.findElement(By.cssSelector("input[value='Add to wishlist']")).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated((By.id("bar-notification"))));
         Assert.assertEquals(alertSuccess.getText(), "The product has been added to your wishlist");
         wait.until(ExpectedConditions.invisibilityOfElementLocated(By.className("bar-notification-container")));
         wishListbutton.click();
+
     }
 
     public void ProductCompareList () {
@@ -86,6 +92,10 @@ public class ProductSelectionPage extends BasePage {
 
     public boolean ProductSelectionPageDisplayed () {
         return productSelectionPageTitle.isDisplayed();
+    }
+
+    public boolean WishlistItemTitleDisplayed () {
+        return wishlistTitleDisplayed.isDisplayed();
     }
 
 

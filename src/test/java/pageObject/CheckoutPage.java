@@ -177,7 +177,6 @@ public class CheckoutPage extends BasePage {
             this.cardCode.sendKeys(cardCode);
             continueButtonStep5.click();
             continueButtonStep6.click();
-            wait.until(ExpectedConditions.alertIsPresent());
             wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("page-title")));
         }
     }

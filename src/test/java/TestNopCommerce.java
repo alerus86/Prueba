@@ -14,8 +14,7 @@ import pageObject.*;
 
 import java.util.concurrent.TimeUnit;
 
-import static org.testng.Assert.assertEquals;
-import static org.testng.Assert.assertTrue;
+import static org.testng.Assert.*;
 
 
 public class TestNopCommerce
@@ -124,11 +123,14 @@ public class TestNopCommerce
             loginSomeUser.loginUser("testing2002@testing.com", "Testing$");
             resultProductPage = homePage.results();
             resultProductPage.SelectBook();
+            assertTrue(resultProductPage.ResultProductPageTitleDisplayed());
             itemSelected = homePage.itemSelected();
+            assertTrue(itemSelected.ProductItemTitle());
             itemSelected.FahrenheitBook();
             shoppingCart = homePage.shoppingCartPage();
             shoppingCart.CheckoutProduct();
             checkoutPage = homePage.checkoutPage();
+            assertTrue(shoppingCart.ShoppingCartTitleDisplayed());
             checkoutPage.checkoutProductCreditCard("235" , "Test" , "Testing apto 001" , "12345" , "12345678" ,
                     "Testing Tester" , "0000000000000000" , "12" , "2022" , "1234");
             assertTrue(checkoutPage.OrderConfirmationSuccess());
@@ -146,10 +148,11 @@ public class TestNopCommerce
             loginSomeUser.loginUser(userMail , userPassword);
             searchAndResultPage = homePage.searchAndResultPage();
             searchAndResultPage.searchProduct(productSearch);
-            assertTrue(searchAndResultPage.resultsProductsDisplayed());
+            assertTrue(searchAndResultPage.ResultsProductsDisplayed());
             productSelection = homePage.productSelected();
+            assertTrue(searchAndResultPage.SearchTitleDisplayed());
             productSelection.SelectedProductDataProvider(productSearch);
-
+            assertTrue(productSelection.WishlistItemTitleDisplayed());
         }
 
         //CP5
@@ -162,8 +165,9 @@ public class TestNopCommerce
             loginSomeUser.loginUser("testing2002@testing.com" , "Testing$");
             searchAndResultPage = homePage.searchAndResultPage();
             searchAndResultPage.searchProduct("ring");
-            assertTrue(searchAndResultPage.resultsProductsDisplayed());
+            assertTrue(searchAndResultPage.ResultsProductsDisplayed());
             productSelection = homePage.productSelected();
+            assertTrue(productSelection.ProductSelectionPageDisplayed());
             productSelection.ProductCompareList();
             compareProductPage = homePage.compareProductPage();
             assertTrue(compareProductPage.clearListButton());
@@ -178,6 +182,7 @@ public class TestNopCommerce
             assertTrue(homePage.loginTitleIsDisplayed());
             loginSomeUser.loginUser("testing2002@testing.com" , "Testing$");
             myAccountPage = homePage.myAccountPage();
+            assertTrue(myAccountPage.MyAccountPageTitleDisplayed());
             myAccountPage.changePassword("Testing#" , "Testing$" , "Testing$");
 
 

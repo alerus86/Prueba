@@ -17,7 +17,7 @@ public class DataProviderClass {
                                 "testing2002@testing.com","Testing$","HP Spectre XT Pro UltraBook"
                         },
                         {
-                                "testing2002@testing.com","Testing$","Nike Floral Roshe Customized Running Shoes"
+                                "testing2002@testing.com","Testing$","Beats Pill 2.0 Wireless Speaker"
                         },
                         {
                                 "testing2002@testing.com","Testing$","Lenovo Thinkpad X1 Carbon Laptop"

@@ -54,6 +54,8 @@ public class MyAccountPage extends BasePage {
     private WebElement phoneNumberAddress;
     @FindBy (className = "save-address-button")
     private WebElement saveNewAddress;
+    @FindBy (className = "page-title")
+    private WebElement myAccountTitle;
 
 
     public void changePassword (String oldPassword , String newPassword , String confirmNewPassword) {
@@ -64,8 +66,11 @@ public class MyAccountPage extends BasePage {
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("master-wrapper-page")));
         assertTrue(passwordFieldVisible.isDisplayed());
         this.oldPassword.sendKeys(oldPassword);
+        assertEquals(oldPassword , "Testing#");
         this.newPasswrod.sendKeys(newPassword);
+        assertEquals(newPassword , "Testing$");
         this.confirmNewPassword.sendKeys(confirmNewPassword);
+        assertEquals(confirmNewPassword , "Testing$");
         confirmChangePasswordButton.click();
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("result")));
         assertEquals(passwordWasChange.getText() , "Password was changed");
@@ -98,6 +103,11 @@ public class MyAccountPage extends BasePage {
         assertEquals(addNewAddressTitle.getText() , "My account - Addresses");
 
 
+    }
+
+    public boolean MyAccountPageTitleDisplayed () {
+
+        return myAccountTitle.isDisplayed();
     }
 
 

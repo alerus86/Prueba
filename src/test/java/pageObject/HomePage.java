@@ -87,9 +87,6 @@ public class HomePage extends BasePage {
         return new EmailAFriendPage(chrome);
     }
 
-
-
-
     public boolean pageTitleIsDiplayed (){
 
         return registerTitlePage.isDisplayed();

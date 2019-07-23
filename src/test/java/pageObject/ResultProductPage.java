@@ -3,7 +3,7 @@ package pageObject;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import static org.testng.Assert.*;
+
 
 public class ResultProductPage extends BasePage {
 
@@ -16,7 +16,7 @@ public class ResultProductPage extends BasePage {
     @FindBy (linkText = "Camera & photo")
     private WebElement clickCameraAndPhoto;
     @FindBy (className = "page-title")
-    private WebElement electronicTitle;
+    private WebElement pageTitles;
 
 
     public void SelectCellPhone() {
@@ -40,7 +40,7 @@ public class ResultProductPage extends BasePage {
 
     public boolean ResultProductPageTitleDisplayed () {
 
-        return electronicTitle.isDisplayed();
+        return pageTitles.isDisplayed();
     }
 
 
