@@ -50,12 +50,6 @@ public class ProductSelectionPage extends BasePage {
 
     }
 
-    public void BookSelection () {
-
-        selectedBook.click();
-
-    }
-
     public void SelectedCamera(){
 
         selectedCamera.click();

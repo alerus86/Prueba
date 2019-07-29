@@ -56,6 +56,8 @@ public class MyAccountPage extends BasePage {
     private WebElement saveNewAddress;
     @FindBy (className = "page-title")
     private WebElement myAccountTitle;
+    @FindBy (className = "page-title")
+    private WebElement myAddressTitle;
 
 
     public void changePassword (String oldPassword , String newPassword , String confirmNewPassword) {
@@ -88,16 +90,23 @@ public class MyAccountPage extends BasePage {
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("page-title")));
         assertEquals(addNewAddressTitle.getText() , "My account - Add new address");
         this.addressFirstName.sendKeys(addressFirstName);
+        assertEquals(addressFirstName , "Test1");
         this.addressLastName.sendKeys(addressLastName);
+        assertEquals(addressLastName , "Testing1");
         this.addressEmail.sendKeys(addressEmail);
+        assertEquals(addressEmail , "testing2019@testing.com");
         Select countryCombo = new Select(this.countrySelectAddress);
         countryCombo.selectByValue(countrySelectAddress);
         Select stateCombo = new Select(this.stateComboAddress);
         stateCombo.selectByValue(stateComboAddress);
         this.cityAddress.sendKeys(cityAddress);
+        assertEquals(cityAddress , "City");
         this.newAddress.sendKeys(newAddress);
+        assertEquals(newAddress , "Testing 1212 block 2");
         this.zipCodeAddress.sendKeys(zipCodeAddress);
+        assertEquals(zipCodeAddress , "12345");
         this.phoneNumberAddress.sendKeys(phoneNumberAddress);
+        assertEquals(phoneNumberAddress , "1234567");
         saveNewAddress.click();
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("page-title")));
         assertEquals(addNewAddressTitle.getText() , "My account - Addresses");
@@ -108,6 +117,11 @@ public class MyAccountPage extends BasePage {
     public boolean MyAccountPageTitleDisplayed () {
 
         return myAccountTitle.isDisplayed();
+    }
+
+    public boolean MyAddressPageTitleDisplayed () {
+
+        return myAddressTitle.isDisplayed();
     }
 
 

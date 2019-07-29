@@ -191,7 +191,9 @@ public class CheckoutPage extends BasePage {
 
     }
 
-    public boolean ShoppingCartTitleDisplayed () {return shoppingCartTitle.isDisplayed();}
+    public boolean ShoppingCartTitleDisplayed () {
+        return shoppingCartTitle.isDisplayed();
+    }
     public boolean OrderConfirmationSuccess(){
         return orderConfirmation.isDisplayed();
     }

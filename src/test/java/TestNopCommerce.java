@@ -197,6 +197,7 @@ public class TestNopCommerce
             assertTrue(homePage.loginTitleIsDisplayed());
             loginSomeUser.loginUser("testing2002@testing.com" , "Testing$");
             myAccountPage = homePage.myAccountPage();
+            assertTrue(myAccountPage.MyAddressPageTitleDisplayed());
             myAccountPage.addNewAddress("Test1" , "Testing1" ,
                     "testing2019@testing.com" , "1" ,
                     "62" , "City" , "Testing 1212 block 2" ,
@@ -213,14 +214,18 @@ public class TestNopCommerce
             loginSomeUser.loginUser("testing2002@testing.com" , "Testing$");
             resultProductPage = homePage.results();
             resultProductPage.SelectCellPhone();
+            assertTrue(resultProductPage.ResultProductPageTitleDisplayed());
             productSelection = homePage.productSelected();
             productSelection.CellPhoneSelectionNokia();
             itemSelected = homePage.itemSelected();
+            assertTrue(itemSelected.ProductItemTitle());
             itemSelected.NokiCellPhone();
             resultProductPage.SelectBook();
-            productSelection.BookSelection();
+            assertTrue(resultProductPage.ResultProductPageTitleDisplayed());
+            assertTrue(itemSelected.ProductItemTitle());
             itemSelected.FahrenheitBook();
             checkoutPage = homePage.checkoutPage();
+            assertTrue(checkoutPage.ShoppingCartTitleDisplayed());
             checkoutPage.deleteCheckoutProduct();
         }
 
