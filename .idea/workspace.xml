@@ -1,27 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="165200e7-6d7c-433d-8fb0-660f693366fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestNopCommerce.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/pageObject/LogoutUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/utils/SeleniumUtils.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestNopCommerce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestNopCommerce.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/CheckoutPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/EmailAFriendPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/EmailAFriendPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/ItemSelectedResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/ItemSelectedResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/RegisterUserPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/RegisterUserPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/ReviewSelectedProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/ReviewSelectedProductPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestNopCommerce.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/TestNopCommerce.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/EmailAFriendPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObject/EmailAFriendPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObject/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/ItemSelectedResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObject/ItemSelectedResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/ProductSelectionPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObject/ProductSelectionPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/RegisterUserPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObject/RegisterUserPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/ReviewSelectedProductPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/pageObject/ReviewSelectedProductPage.class" afterDir="false" />
-    </list>
+    <list default="true" id="165200e7-6d7c-433d-8fb0-660f693366fc" name="Default Changelist" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
