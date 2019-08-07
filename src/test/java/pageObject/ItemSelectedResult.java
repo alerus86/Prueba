@@ -24,6 +24,8 @@ public class ItemSelectedResult extends BasePage {
     private WebElement selectedProductTitle;
     @FindBy (className = "product-title")
     private WebElement selectedItem;
+    @FindBy (className = "product-name")
+    private WebElement selectedProductName;
 
 
     public void NokiCellPhone () {
@@ -78,6 +80,11 @@ public class ItemSelectedResult extends BasePage {
     public boolean ProductItemTitle () {
 
         return selectedItem.isDisplayed();
+    }
+
+    public boolean ProductTitleName () {
+
+        return selectedProductName.isDisplayed();
     }
 
 

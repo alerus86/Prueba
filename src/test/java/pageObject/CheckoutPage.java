@@ -72,21 +72,21 @@ public class CheckoutPage extends BasePage {
 
     public void checkoutProduct (String countryCombo , String city , String address1 , String zipCode , String phoneNumber) {
 
-        boolean primeraVez;
+        boolean firstTime;
         unCheckShippingAddress.click();
         try {
 
-            primeraVez = true;
+            firstTime = true;
             Select comboCountry = new Select(selectCountryCombo);
             comboCountry.selectByValue(countryCombo);
 
         }
         catch (Exception e) {
 
-            primeraVez=false;
+            firstTime=false;
 
         }
-        if (primeraVez) {
+        if (firstTime) {
 
             this.city.sendKeys(city);
             assertEquals(city , "Test");
@@ -105,7 +105,7 @@ public class CheckoutPage extends BasePage {
             continueButtonStep4.click();
             continueButtonStep5.click();
             continueButtonStep6.click();
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("page-title")));
+            wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("input[onclick='setLocation(\"/\")']")));
         }
         else {
 
@@ -119,7 +119,8 @@ public class CheckoutPage extends BasePage {
             continueButtonStep4.click();
             continueButtonStep5.click();
             continueButtonStep6.click();
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("page-title")));
+            wait.until(ExpectedConditions.elementToBeClickable(By.cssSelector("input[onclick='setLocation(\"/\")']")));
+
         }
 
 
@@ -128,18 +129,19 @@ public class CheckoutPage extends BasePage {
     public void checkoutProductCreditCard (String countryCombo , String city , String address1 , String zipCode , String phoneNumber , String cardHolderName
             , String cardNumber , String monthExpirationCard , String yearExpirationCard , String cardCode){
 
-        boolean primeraVez;
+        boolean firstTime;
+        boolean alertDisplay;
         unCheckShippingAddress.click();
         try {
-            primeraVez = true;
+            firstTime = true;
             Select comboCountry = new Select(selectCountryCombo);
             comboCountry.selectByValue(countryCombo);
 
         }
         catch (Exception e){
-            primeraVez = false;
+            firstTime = false;
         }
-        if (primeraVez) {
+        if (firstTime) {
             this.city.sendKeys(city);
             this.address1.sendKeys(address1);
             this.zipCode.sendKeys(zipCode);
@@ -157,8 +159,20 @@ public class CheckoutPage extends BasePage {
             this.yearExpirationCard.sendKeys(yearExpirationCard);
             this.cardCode.sendKeys(cardCode);
             continueButtonStep5.click();
-            continueButtonStep6.click();
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("page-title")));
+            try {
+
+                while (alertDisplay = true) {
+                    continueButtonStep6.click();
+                    wait.until(ExpectedConditions.alertIsPresent());
+                    Alert alert1 = chrome.switchTo().alert();
+                    alert1.accept();
+                    continueButtonStep6.click();
+                    wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("page-title")));
+                }
+            }
+            catch (Exception e) {
+                alertDisplay = false;
+            }
 
         }
         else {
@@ -176,8 +190,22 @@ public class CheckoutPage extends BasePage {
             this.yearExpirationCard.sendKeys(yearExpirationCard);
             this.cardCode.sendKeys(cardCode);
             continueButtonStep5.click();
-            continueButtonStep6.click();
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("page-title")));
+            try {
+
+                while (alertDisplay = true) {
+                    continueButtonStep6.click();
+                    wait.until(ExpectedConditions.alertIsPresent());
+                    Alert alert1 = chrome.switchTo().alert();
+                    alert1.accept();
+                    continueButtonStep6.click();
+                    wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("page-title")));
+                }
+
+            }
+            catch (Exception e) {
+                alertDisplay = false;
+            }
+
         }
     }
 

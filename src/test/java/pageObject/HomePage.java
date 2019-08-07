@@ -17,6 +17,9 @@ public class HomePage extends BasePage {
     private WebElement loginTitlePage;
     @FindBy (className = "ico-account")
     private WebElement myAccountButton;
+    @FindBy (className = "ico-logout")
+    private WebElement logoutButton;
+
 
 
     public RegisterUserPage register () {
@@ -29,6 +32,13 @@ public class HomePage extends BasePage {
 
         loginButton.click();
         return new LoginUser(chrome);
+
+    }
+
+    public LogoutUser logoutUser () {
+
+        logoutButton.click();
+        return new LogoutUser(chrome);
 
     }
 
