@@ -8,7 +8,7 @@
             <class name = "TestNopCommerce">
 
                 <methods>
-                    <exclude name="nuevoUsuarioRegistrado"/>
+                    <include name="nuevoUsuarioRegistrado"/>
                     <include name="checkOutConEfectivo"/>
                     <include name="checkOutConTarjetaDeCredito"/>
                     <include name="agregarWishlist"/>
