@@ -57,7 +57,7 @@ public class RegisterUserPage extends BasePage {
         comboYearOfBirth.selectByValue(yearOfBirth);
         assertEquals(yearOfBirth , "1986");
         this.email.sendKeys(email);
-        assertEquals(email , "testing1900@test.com");
+        assertEquals(email , "testing1906@test.com");
         this.password.sendKeys(password);
         assertEquals(password , "Test1234");
         this.confirmPassword.sendKeys(confirmPassword);

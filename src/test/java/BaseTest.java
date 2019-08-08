@@ -44,6 +44,13 @@ public class BaseTest {
     @Parameters("browser")
     public void setupSuite(String browser){
 
+        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
+        chromeOptions = new ChromeOptions();
+        chromeOptions.addArguments("start-maximized");
+        chrome = new ChromeDriver(chromeOptions);
+        wait = new WebDriverWait(chrome, 10);
+        addUser = new RegisterUserPage(chrome);
+        homePage = new HomePage(chrome);
         setupReports();
     }
 
@@ -66,14 +73,6 @@ public class BaseTest {
     @BeforeMethod (alwaysRun = true)
     public void setupTest(){
 
-
-        System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
-        chromeOptions = new ChromeOptions();
-        chromeOptions.addArguments("start-maximized");
-        chrome = new ChromeDriver(chromeOptions);
-        wait = new WebDriverWait(chrome, 10);
-        addUser = new RegisterUserPage(chrome);
-        homePage = new HomePage(chrome);
         chrome.get("http://demo.nopcommerce.com/");
         chrome.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         softAssert = new SoftAssert();
@@ -99,13 +98,14 @@ public class BaseTest {
             extentTest.log(Status.PASS,
                     "Test Case " + result.getName() + " passed");
         }
-        chrome.quit();
+
 
     }
     @AfterSuite(alwaysRun = true)
     public void flush()
     {
         extentReports.flush();
+        chrome.quit();
 
     }
 

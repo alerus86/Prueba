@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-SingleSuite">
+              <span class="suite-name border-passed">SingleSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-SingleSuite">
+                    <span>C:\Users\aruske\Documents\AutomationOA\nopCommerce\src\test\java\TestNopCommerce.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-SingleSuite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-SingleSuite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-SingleSuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-SingleSuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-SingleSuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-SingleSuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">12 methods,   12 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-SingleSuite" class="hide-methods passed suite-SingleSuite"> (hide)</a> <!-- hide-methods passed suite-SingleSuite -->
+                      <a href="#" panel-name="suite-SingleSuite" class="show-methods passed suite-SingleSuite"> (show)</a> <!-- show-methods passed suite-SingleSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-SingleSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SingleSuite" title="TestNopCommerce" hash-for-method="agregarWishlist(testing2002@testing.com, Testing$, Digital Storm, public void TestNopCommerce.agregarWishlist(java.l...)">agregarWishlist(testing2002@testing.com, Testing$, Digital Storm, public void TestNopCommerce.agregarWishlist(java.l...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SingleSuite" title="TestNopCommerce" hash-for-method="agregarWishlist(testing2002@testing.com, Testing$, Vintage Style Engagement Ring, public void TestNopCommerce.agrega...)">agregarWishlist(testing2002@testing.com, Testing$, Vintage Style Engagement Ring, public void TestNopCommerce.agrega...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SingleSuite" title="TestNopCommerce" hash-for-method="agregarWishlist(testing2002@testing.com, Testing$, Lenovo Thinkpad X1 Carbon Laptop, public void TestNopCommerce.agr...)">agregarWishlist(testing2002@testing.com, Testing$, Lenovo Thinkpad X1 Carbon Laptop, public void TestNopCommerce.agr...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SingleSuite" title="TestNopCommerce" hash-for-method="agregarWishlist(testing2002@testing.com, Testing$, Beats Pill 2.0 Wireless Speaker, public void TestNopCommerce.agre...)">agregarWishlist(testing2002@testing.com, Testing$, Beats Pill 2.0 Wireless Speaker, public void TestNopCommerce.agre...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SingleSuite" title="TestNopCommerce" hash-for-method="agregarWishlist(testing2002@testing.com, Testing$, HP Spectre XT Pro UltraBook, public void TestNopCommerce.agregarW...)">agregarWishlist(testing2002@testing.com, Testing$, HP Spectre XT Pro UltraBook, public void TestNopCommerce.agregarW...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SingleSuite" title="TestNopCommerce" hash-for-method="checkOutConEfectivo(public void TestNopCommerce.checkOutConEfectivo(java.lang.reflect.Method))">checkOutConEfectivo(public void TestNopCommerce.checkOutConEfectivo(java.lang.reflect.Method))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SingleSuite" title="TestNopCommerce" hash-for-method="checkOutConTarjetaDeCredito(public void TestNopCommerce.checkOutConTarjetaDeCredito(java.lang.reflect.Method))">checkOutConTarjetaDeCredito(public void TestNopCommerce.checkOutConTarjetaDeCredito(java.lang.reflect.Method))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SingleSuite" title="TestNopCommerce" hash-for-method="compareProducts(public void TestNopCommerce.compareProducts(java.lang.reflect.Method))">compareProducts(public void TestNopCommerce.compareProducts(java.lang.reflect.Method))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SingleSuite" title="TestNopCommerce" hash-for-method="newAddress(public void TestNopCommerce.newAddress(java.lang.reflect.Method))">newAddress(public void TestNopCommerce.newAddress(java.lang.reflect.Method))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SingleSuite" title="TestNopCommerce" hash-for-method="removeItemFromCart(public void TestNopCommerce.removeItemFromCart(java.lang.reflect.Method))">removeItemFromCart(public void TestNopCommerce.removeItemFromCart(java.lang.reflect.Method))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SingleSuite" title="TestNopCommerce" hash-for-method="reviewProduct(public void TestNopCommerce.reviewProduct(java.lang.reflect.Method))">reviewProduct(public void TestNopCommerce.reviewProduct(java.lang.reflect.Method))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SingleSuite" title="TestNopCommerce" hash-for-method="sendProductEmailToFriend(public void TestNopCommerce.sendProductEmailToFriend(java.lang.reflect.Method))">sendProductEmailToFriend(public void TestNopCommerce.sendProductEmailToFriend(java.lang.reflect.Method))</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-SingleSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-SingleSuite" class="panel SingleSuite">
+          <div class="suite-SingleSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestNopCommerce</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="agregarWishlist(testing2002@testing.com, Testing$, Digital Storm, public void TestNopCommerce.agregarWishlist(java.l...)">
+                  </a> <!-- agregarWishlist(testing2002@testing.com, Testing$, Digital Storm, public void TestNopCommerce.agregarWishlist(java.l...) -->
+                  <span class="method-name">agregarWishlist</span>
+                  <span class="parameters">(testing2002@testing.com, Testing$, Digital Storm, public void TestNopCommerce.agregarWishlist(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="agregarWishlist(testing2002@testing.com, Testing$, Vintage Style Engagement Ring, public void TestNopCommerce.agrega...)">
+                  </a> <!-- agregarWishlist(testing2002@testing.com, Testing$, Vintage Style Engagement Ring, public void TestNopCommerce.agrega...) -->
+                  <span class="method-name">agregarWishlist</span>
+                  <span class="parameters">(testing2002@testing.com, Testing$, Vintage Style Engagement Ring, public void TestNopCommerce.agregarWishlist(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="agregarWishlist(testing2002@testing.com, Testing$, Lenovo Thinkpad X1 Carbon Laptop, public void TestNopCommerce.agr...)">
+                  </a> <!-- agregarWishlist(testing2002@testing.com, Testing$, Lenovo Thinkpad X1 Carbon Laptop, public void TestNopCommerce.agr...) -->
+                  <span class="method-name">agregarWishlist</span>
+                  <span class="parameters">(testing2002@testing.com, Testing$, Lenovo Thinkpad X1 Carbon Laptop, public void TestNopCommerce.agregarWishlist(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="agregarWishlist(testing2002@testing.com, Testing$, Beats Pill 2.0 Wireless Speaker, public void TestNopCommerce.agre...)">
+                  </a> <!-- agregarWishlist(testing2002@testing.com, Testing$, Beats Pill 2.0 Wireless Speaker, public void TestNopCommerce.agre...) -->
+                  <span class="method-name">agregarWishlist</span>
+                  <span class="parameters">(testing2002@testing.com, Testing$, Beats Pill 2.0 Wireless Speaker, public void TestNopCommerce.agregarWishlist(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="agregarWishlist(testing2002@testing.com, Testing$, HP Spectre XT Pro UltraBook, public void TestNopCommerce.agregarW...)">
+                  </a> <!-- agregarWishlist(testing2002@testing.com, Testing$, HP Spectre XT Pro UltraBook, public void TestNopCommerce.agregarW...) -->
+                  <span class="method-name">agregarWishlist</span>
+                  <span class="parameters">(testing2002@testing.com, Testing$, HP Spectre XT Pro UltraBook, public void TestNopCommerce.agregarWishlist(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkOutConEfectivo(public void TestNopCommerce.checkOutConEfectivo(java.lang.reflect.Method))">
+                  </a> <!-- checkOutConEfectivo(public void TestNopCommerce.checkOutConEfectivo(java.lang.reflect.Method)) -->
+                  <span class="method-name">checkOutConEfectivo</span>
+                  <span class="parameters">(public void TestNopCommerce.checkOutConEfectivo(java.lang.reflect.Method))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="checkOutConTarjetaDeCredito(public void TestNopCommerce.checkOutConTarjetaDeCredito(java.lang.reflect.Method))">
+                  </a> <!-- checkOutConTarjetaDeCredito(public void TestNopCommerce.checkOutConTarjetaDeCredito(java.lang.reflect.Method)) -->
+                  <span class="method-name">checkOutConTarjetaDeCredito</span>
+                  <span class="parameters">(public void TestNopCommerce.checkOutConTarjetaDeCredito(java.lang.reflect.Method))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="compareProducts(public void TestNopCommerce.compareProducts(java.lang.reflect.Method))">
+                  </a> <!-- compareProducts(public void TestNopCommerce.compareProducts(java.lang.reflect.Method)) -->
+                  <span class="method-name">compareProducts</span>
+                  <span class="parameters">(public void TestNopCommerce.compareProducts(java.lang.reflect.Method))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="newAddress(public void TestNopCommerce.newAddress(java.lang.reflect.Method))">
+                  </a> <!-- newAddress(public void TestNopCommerce.newAddress(java.lang.reflect.Method)) -->
+                  <span class="method-name">newAddress</span>
+                  <span class="parameters">(public void TestNopCommerce.newAddress(java.lang.reflect.Method))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="removeItemFromCart(public void TestNopCommerce.removeItemFromCart(java.lang.reflect.Method))">
+                  </a> <!-- removeItemFromCart(public void TestNopCommerce.removeItemFromCart(java.lang.reflect.Method)) -->
+                  <span class="method-name">removeItemFromCart</span>
+                  <span class="parameters">(public void TestNopCommerce.removeItemFromCart(java.lang.reflect.Method))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reviewProduct(public void TestNopCommerce.reviewProduct(java.lang.reflect.Method))">
+                  </a> <!-- reviewProduct(public void TestNopCommerce.reviewProduct(java.lang.reflect.Method)) -->
+                  <span class="method-name">reviewProduct</span>
+                  <span class="parameters">(public void TestNopCommerce.reviewProduct(java.lang.reflect.Method))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="sendProductEmailToFriend(public void TestNopCommerce.sendProductEmailToFriend(java.lang.reflect.Method))">
+                  </a> <!-- sendProductEmailToFriend(public void TestNopCommerce.sendProductEmailToFriend(java.lang.reflect.Method)) -->
+                  <span class="method-name">sendProductEmailToFriend</span>
+                  <span class="parameters">(public void TestNopCommerce.sendProductEmailToFriend(java.lang.reflect.Method))</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SingleSuite-class-passed -->
+        </div> <!-- panel SingleSuite -->
+        <div panel-name="test-xml-SingleSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\aruske\Documents\AutomationOA\nopCommerce\src\test\java\TestNopCommerce.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;2&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot; name=&quot;SingleSuite&quot; parallel=&quot;tests&quot;&gt;
+  &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+  &lt;test thread-count=&quot;2&quot; verbose=&quot;0&quot; name=&quot;test in Chrome&quot; parallel=&quot;tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestNopCommerce&quot;&gt;
+        &lt;methods&gt;
+          &lt;include name=&quot;checkOutConEfectivo&quot;/&gt;
+          &lt;include name=&quot;checkOutConTarjetaDeCredito&quot;/&gt;
+          &lt;include name=&quot;agregarWishlist&quot;/&gt;
+          &lt;include name=&quot;compareProducts&quot;/&gt;
+          &lt;include name=&quot;newAddress&quot;/&gt;
+          &lt;include name=&quot;removeItemFromCart&quot;/&gt;
+          &lt;include name=&quot;reviewProduct&quot;/&gt;
+          &lt;include name=&quot;sendProductEmailToFriend&quot;/&gt;
+          &lt;exclude name=&quot;nuevoUsuarioRegistrado&quot;/&gt;
+          &lt;exclude name=&quot;changePasswordUser&quot;/&gt;
+        &lt;/methods&gt;
+      &lt;/class&gt; &lt;!-- TestNopCommerce --&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- test in Chrome --&gt;
+&lt;/suite&gt; &lt;!-- SingleSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-SingleSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for SingleSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">test in Chrome (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-SingleSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for SingleSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-SingleSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for SingleSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_SingleSuite');
+function tableData_SingleSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(12);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'checkOutConTarjetaDeCredito')
+data.setCell(0, 2, 'TestNopCommerce')
+data.setCell(0, 3, 37678);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'checkOutConEfectivo')
+data.setCell(1, 2, 'TestNopCommerce')
+data.setCell(1, 3, 23893);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'removeItemFromCart')
+data.setCell(2, 2, 'TestNopCommerce')
+data.setCell(2, 3, 21407);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'compareProducts')
+data.setCell(3, 2, 'TestNopCommerce')
+data.setCell(3, 3, 14910);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'agregarWishlist')
+data.setCell(4, 2, 'TestNopCommerce')
+data.setCell(4, 3, 10382);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'agregarWishlist')
+data.setCell(5, 2, 'TestNopCommerce')
+data.setCell(5, 3, 10024);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'agregarWishlist')
+data.setCell(6, 2, 'TestNopCommerce')
+data.setCell(6, 3, 9860);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'agregarWishlist')
+data.setCell(7, 2, 'TestNopCommerce')
+data.setCell(7, 3, 9447);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'newAddress')
+data.setCell(8, 2, 'TestNopCommerce')
+data.setCell(8, 3, 9403);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'agregarWishlist')
+data.setCell(9, 2, 'TestNopCommerce')
+data.setCell(9, 3, 9306);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'reviewProduct')
+data.setCell(10, 2, 'TestNopCommerce')
+data.setCell(10, 3, 7643);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'sendProductEmailToFriend')
+data.setCell(11, 2, 'TestNopCommerce')
+data.setCell(11, 3, 7341);
+window.suiteTableData['SingleSuite']= { tableData: data, tableDiv: 'times-div-SingleSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-SingleSuite">
+              </div> <!-- times-div-SingleSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-SingleSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for SingleSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-SingleSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">2 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestNopCommerce</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">nuevoUsuarioRegistrado</span>
+                <br/>
+                <span class="ignored-method-name">changePasswordUser</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-SingleSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestNopCommerce</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setupSuite(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">4532 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkOutConEfectivo(public void TestNopCommerce.checkOutConEfectivo(java.lang.reflect.Method))</span>
+                <span class="method-start">8571 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest([TestResult name=checkOutConEfectivo status=SUCCESS method=TestNopCommerce.checkOutConEfectivo(java....)</span>
+                <span class="method-start">32464 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">32474 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">checkOutConTarjetaDeCredito(public void TestNopCommerce.checkOutConTarjetaDeCredito(java.lang.reflect.Method))</span>
+                <span class="method-start">34398 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest([TestResult name=checkOutConTarjetaDeCredito status=SUCCESS method=TestNopCommerce.checkOutConTarjet...)</span>
+                <span class="method-start">72076 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">72085 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">agregarWishlist(testing2002@testing.com, Testing$, Digital Storm, public void TestNopCommerce.agregarWishlist(java.l...)</span>
+                <span class="method-start">72692 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest([TestResult name=agregarWishlist status=SUCCESS method=TestNopCommerce.agregarWishlist(java.lang.Str...)</span>
+                <span class="method-start">83075 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">83075 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">agregarWishlist(testing2002@testing.com, Testing$, Vintage Style Engagement Ring, public void TestNopCommerce.agrega...)</span>
+                <span class="method-start">84092 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest([TestResult name=agregarWishlist status=SUCCESS method=TestNopCommerce.agregarWishlist(java.lang.Str...)</span>
+                <span class="method-start">93539 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">93540 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">agregarWishlist(testing2002@testing.com, Testing$, HP Spectre XT Pro UltraBook, public void TestNopCommerce.agregarW...)</span>
+                <span class="method-start">94148 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest([TestResult name=agregarWishlist status=SUCCESS method=TestNopCommerce.agregarWishlist(java.lang.Str...)</span>
+                <span class="method-start">104172 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">104173 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">agregarWishlist(testing2002@testing.com, Testing$, Beats Pill 2.0 Wireless Speaker, public void TestNopCommerce.agre...)</span>
+                <span class="method-start">104828 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest([TestResult name=agregarWishlist status=SUCCESS method=TestNopCommerce.agregarWishlist(java.lang.Str...)</span>
+                <span class="method-start">114135 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">114135 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">agregarWishlist(testing2002@testing.com, Testing$, Lenovo Thinkpad X1 Carbon Laptop, public void TestNopCommerce.agr...)</span>
+                <span class="method-start">114767 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest([TestResult name=agregarWishlist status=SUCCESS method=TestNopCommerce.agregarWishlist(java.lang.Str...)</span>
+                <span class="method-start">124627 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">124628 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">compareProducts(public void TestNopCommerce.compareProducts(java.lang.reflect.Method))</span>
+                <span class="method-start">125265 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest([TestResult name=compareProducts status=SUCCESS method=TestNopCommerce.compareProducts(java.lang.ref...)</span>
+                <span class="method-start">140175 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">140176 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">newAddress(public void TestNopCommerce.newAddress(java.lang.reflect.Method))</span>
+                <span class="method-start">140884 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest([TestResult name=newAddress status=SUCCESS method=TestNopCommerce.newAddress(java.lang.reflect.Metho...)</span>
+                <span class="method-start">150287 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">150288 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">removeItemFromCart(public void TestNopCommerce.removeItemFromCart(java.lang.reflect.Method))</span>
+                <span class="method-start">150864 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest([TestResult name=removeItemFromCart status=SUCCESS method=TestNopCommerce.removeItemFromCart(java.la...)</span>
+                <span class="method-start">172271 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">172272 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">reviewProduct(public void TestNopCommerce.reviewProduct(java.lang.reflect.Method))</span>
+                <span class="method-start">172832 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest([TestResult name=reviewProduct status=SUCCESS method=TestNopCommerce.reviewProduct(java.lang.reflect...)</span>
+                <span class="method-start">180475 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setupTest</span>
+                <span class="method-start">180477 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">sendProductEmailToFriend(public void TestNopCommerce.sendProductEmailToFriend(java.lang.reflect.Method))</span>
+                <span class="method-start">181040 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">teardownTest([TestResult name=sendProductEmailToFriend status=SUCCESS method=TestNopCommerce.sendProductEmailToFr...)</span>
+                <span class="method-start">188381 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-suite after">
+                <span class="method-name">flush</span>
+                <span class="method-start">188410 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

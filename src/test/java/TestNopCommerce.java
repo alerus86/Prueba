@@ -12,12 +12,10 @@ public class TestNopCommerce extends BaseTest
             extentTest = extentReports.createTest(method.getName());
             addUser = homePage.register();
             assertTrue(homePage.pageTitleIsDiplayed());
-            addUser.registerUser("Test" , "Testing" , "14" , "7" , "1986" , "testing1900@test.com" ,
+            addUser.registerUser("Test" , "Testing" , "14" , "7" , "1986" , "testing1906@test.com" ,
                     "Test1234" , "Test1234");
             assertTrue(addUser.messageSuccessIsDisplayed());
-            //logoutSomeUser = homePage.logoutUser();
-            logoutSomeUser.logoutUser();
-
+            logoutSomeUser = homePage.logoutUser();
 
         }
 
@@ -120,10 +118,10 @@ public class TestNopCommerce extends BaseTest
             extentTest = extentReports.createTest(method.getName());
             loginSomeUser = homePage.login();
             assertTrue(homePage.loginTitleIsDisplayed());
-            loginSomeUser.loginUser("testing2002@testing.com" , "Testing$");
+            loginSomeUser.loginUser("testing1903@test.com" , "Testing@");
             myAccountPage = homePage.myAccountPage();
             assertTrue(myAccountPage.MyAccountPageTitleDisplayed());
-            myAccountPage.changePassword("Testing#" , "Testing$" , "Testing$");
+            myAccountPage.changePassword("Testing@" , "Testing!" , "Testing!");
             logoutSomeUser = homePage.logoutUser();
 
         }

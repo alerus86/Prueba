@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="2" total="14" passed="12">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SingleSuite" duration-ms="183867" started-at="2019-08-08T01:26:51Z" finished-at="2019-08-08T01:29:55Z">
+    <groups>
+    </groups>
+    <test name="test in Chrome" duration-ms="183867" started-at="2019-08-08T01:26:51Z" finished-at="2019-08-08T01:29:55Z">
+      <class name="TestNopCommerce">
+        <test-method status="PASS" signature="setupSuite(java.lang.String)[pri:0, instance:TestNopCommerce@dfd3711]" name="setupSuite" is-config="true" duration-ms="4513" started-at="2019-08-08T01:26:47Z" finished-at="2019-08-08T01:26:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupSuite -->
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:TestNopCommerce@dfd3711]" name="setupTest" is-config="true" duration-ms="4039" started-at="2019-08-08T01:26:51Z" finished-at="2019-08-08T01:26:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method status="PASS" signature="checkOutConEfectivo(java.lang.reflect.Method)[pri:0, instance:TestNopCommerce@dfd3711]" name="checkOutConEfectivo" duration-ms="23893" started-at="2019-08-08T01:26:55Z" finished-at="2019-08-08T01:27:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestNopCommerce.checkOutConEfectivo(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOutConEfectivo -->
+        <test-method status="PASS" signature="teardownTest(org.testng.ITestResult)[pri:0, instance:TestNopCommerce@dfd3711]" name="teardownTest" is-config="true" duration-ms="9" started-at="2019-08-08T01:27:19Z" finished-at="2019-08-08T01:27:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkOutConEfectivo status=SUCCESS method=TestNopCommerce.checkOutConEfectivo(java.lang.reflect.Method)[pri:0, instance:TestNopCommerce@dfd3711] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownTest -->
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:TestNopCommerce@dfd3711]" name="setupTest" is-config="true" duration-ms="1924" started-at="2019-08-08T01:27:19Z" finished-at="2019-08-08T01:27:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method status="PASS" signature="checkOutConTarjetaDeCredito(java.lang.reflect.Method)[pri:0, instance:TestNopCommerce@dfd3711]" name="checkOutConTarjetaDeCredito" duration-ms="37678" started-at="2019-08-08T01:27:21Z" finished-at="2019-08-08T01:27:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestNopCommerce.checkOutConTarjetaDeCredito(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOutConTarjetaDeCredito -->
+        <test-method status="PASS" signature="teardownTest(org.testng.ITestResult)[pri:0, instance:TestNopCommerce@dfd3711]" name="teardownTest" is-config="true" duration-ms="1" started-at="2019-08-08T01:27:59Z" finished-at="2019-08-08T01:27:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=checkOutConTarjetaDeCredito status=SUCCESS method=TestNopCommerce.checkOutConTarjetaDeCredito(java.lang.reflect.Method)[pri:0, instance:TestNopCommerce@dfd3711] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownTest -->
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:TestNopCommerce@dfd3711]" name="setupTest" is-config="true" duration-ms="607" started-at="2019-08-08T01:27:59Z" finished-at="2019-08-08T01:27:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method status="PASS" signature="agregarWishlist(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:TestNopCommerce@dfd3711]" name="agregarWishlist" duration-ms="10382" started-at="2019-08-08T01:27:59Z" data-provider="AddToWishlist" finished-at="2019-08-08T01:28:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testing2002@testing.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Testing$]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Digital Storm]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestNopCommerce.agregarWishlist(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- agregarWishlist -->
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:TestNopCommerce@dfd3711]" name="setupTest" is-config="true" duration-ms="1017" started-at="2019-08-08T01:28:10Z" finished-at="2019-08-08T01:28:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method status="PASS" signature="teardownTest(org.testng.ITestResult)[pri:0, instance:TestNopCommerce@dfd3711]" name="teardownTest" is-config="true" duration-ms="0" started-at="2019-08-08T01:28:10Z" finished-at="2019-08-08T01:28:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=agregarWishlist status=SUCCESS method=TestNopCommerce.agregarWishlist(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:TestNopCommerce@dfd3711] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownTest -->
+        <test-method status="PASS" signature="agregarWishlist(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:TestNopCommerce@dfd3711]" name="agregarWishlist" duration-ms="9447" started-at="2019-08-08T01:28:11Z" data-provider="AddToWishlist" finished-at="2019-08-08T01:28:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testing2002@testing.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Testing$]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Vintage Style Engagement Ring]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestNopCommerce.agregarWishlist(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- agregarWishlist -->
+        <test-method status="PASS" signature="teardownTest(org.testng.ITestResult)[pri:0, instance:TestNopCommerce@dfd3711]" name="teardownTest" is-config="true" duration-ms="1" started-at="2019-08-08T01:28:20Z" finished-at="2019-08-08T01:28:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=agregarWishlist status=SUCCESS method=TestNopCommerce.agregarWishlist(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:TestNopCommerce@dfd3711] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownTest -->
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:TestNopCommerce@dfd3711]" name="setupTest" is-config="true" duration-ms="608" started-at="2019-08-08T01:28:20Z" finished-at="2019-08-08T01:28:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method status="PASS" signature="agregarWishlist(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:TestNopCommerce@dfd3711]" name="agregarWishlist" duration-ms="10024" started-at="2019-08-08T01:28:21Z" data-provider="AddToWishlist" finished-at="2019-08-08T01:28:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testing2002@testing.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Testing$]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[HP Spectre XT Pro UltraBook]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestNopCommerce.agregarWishlist(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- agregarWishlist -->
+        <test-method status="PASS" signature="teardownTest(org.testng.ITestResult)[pri:0, instance:TestNopCommerce@dfd3711]" name="teardownTest" is-config="true" duration-ms="1" started-at="2019-08-08T01:28:31Z" finished-at="2019-08-08T01:28:31Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=agregarWishlist status=SUCCESS method=TestNopCommerce.agregarWishlist(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:TestNopCommerce@dfd3711] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownTest -->
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:TestNopCommerce@dfd3711]" name="setupTest" is-config="true" duration-ms="655" started-at="2019-08-08T01:28:31Z" finished-at="2019-08-08T01:28:32Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method status="PASS" signature="agregarWishlist(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:TestNopCommerce@dfd3711]" name="agregarWishlist" duration-ms="9306" started-at="2019-08-08T01:28:32Z" data-provider="AddToWishlist" finished-at="2019-08-08T01:28:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testing2002@testing.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Testing$]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Beats Pill 2.0 Wireless Speaker]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestNopCommerce.agregarWishlist(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- agregarWishlist -->
+        <test-method status="PASS" signature="teardownTest(org.testng.ITestResult)[pri:0, instance:TestNopCommerce@dfd3711]" name="teardownTest" is-config="true" duration-ms="0" started-at="2019-08-08T01:28:41Z" finished-at="2019-08-08T01:28:41Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=agregarWishlist status=SUCCESS method=TestNopCommerce.agregarWishlist(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:TestNopCommerce@dfd3711] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownTest -->
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:TestNopCommerce@dfd3711]" name="setupTest" is-config="true" duration-ms="632" started-at="2019-08-08T01:28:41Z" finished-at="2019-08-08T01:28:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method status="PASS" signature="agregarWishlist(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:TestNopCommerce@dfd3711]" name="agregarWishlist" duration-ms="9860" started-at="2019-08-08T01:28:41Z" data-provider="AddToWishlist" finished-at="2019-08-08T01:28:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[testing2002@testing.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Testing$]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[Lenovo Thinkpad X1 Carbon Laptop]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[public void TestNopCommerce.agregarWishlist(java.lang.String,java.lang.String,java.lang.String,java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- agregarWishlist -->
+        <test-method status="PASS" signature="teardownTest(org.testng.ITestResult)[pri:0, instance:TestNopCommerce@dfd3711]" name="teardownTest" is-config="true" duration-ms="0" started-at="2019-08-08T01:28:51Z" finished-at="2019-08-08T01:28:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=agregarWishlist status=SUCCESS method=TestNopCommerce.agregarWishlist(java.lang.String, java.lang.String, java.lang.String, java.lang.reflect.Method)[pri:0, instance:TestNopCommerce@dfd3711] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownTest -->
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:TestNopCommerce@dfd3711]" name="setupTest" is-config="true" duration-ms="637" started-at="2019-08-08T01:28:51Z" finished-at="2019-08-08T01:28:52Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method status="PASS" signature="compareProducts(java.lang.reflect.Method)[pri:0, instance:TestNopCommerce@dfd3711]" name="compareProducts" duration-ms="14910" started-at="2019-08-08T01:28:52Z" finished-at="2019-08-08T01:29:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestNopCommerce.compareProducts(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- compareProducts -->
+        <test-method status="PASS" signature="teardownTest(org.testng.ITestResult)[pri:0, instance:TestNopCommerce@dfd3711]" name="teardownTest" is-config="true" duration-ms="1" started-at="2019-08-08T01:29:07Z" finished-at="2019-08-08T01:29:07Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=compareProducts status=SUCCESS method=TestNopCommerce.compareProducts(java.lang.reflect.Method)[pri:0, instance:TestNopCommerce@dfd3711] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownTest -->
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:TestNopCommerce@dfd3711]" name="setupTest" is-config="true" duration-ms="708" started-at="2019-08-08T01:29:07Z" finished-at="2019-08-08T01:29:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method status="PASS" signature="newAddress(java.lang.reflect.Method)[pri:0, instance:TestNopCommerce@dfd3711]" name="newAddress" duration-ms="9403" started-at="2019-08-08T01:29:08Z" finished-at="2019-08-08T01:29:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestNopCommerce.newAddress(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- newAddress -->
+        <test-method status="PASS" signature="teardownTest(org.testng.ITestResult)[pri:0, instance:TestNopCommerce@dfd3711]" name="teardownTest" is-config="true" duration-ms="1" started-at="2019-08-08T01:29:17Z" finished-at="2019-08-08T01:29:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=newAddress status=SUCCESS method=TestNopCommerce.newAddress(java.lang.reflect.Method)[pri:0, instance:TestNopCommerce@dfd3711] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownTest -->
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:TestNopCommerce@dfd3711]" name="setupTest" is-config="true" duration-ms="576" started-at="2019-08-08T01:29:17Z" finished-at="2019-08-08T01:29:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method status="PASS" signature="removeItemFromCart(java.lang.reflect.Method)[pri:0, instance:TestNopCommerce@dfd3711]" name="removeItemFromCart" duration-ms="21407" started-at="2019-08-08T01:29:18Z" finished-at="2019-08-08T01:29:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestNopCommerce.removeItemFromCart(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeItemFromCart -->
+        <test-method status="PASS" signature="teardownTest(org.testng.ITestResult)[pri:0, instance:TestNopCommerce@dfd3711]" name="teardownTest" is-config="true" duration-ms="1" started-at="2019-08-08T01:29:39Z" finished-at="2019-08-08T01:29:39Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=removeItemFromCart status=SUCCESS method=TestNopCommerce.removeItemFromCart(java.lang.reflect.Method)[pri:0, instance:TestNopCommerce@dfd3711] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownTest -->
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:TestNopCommerce@dfd3711]" name="setupTest" is-config="true" duration-ms="560" started-at="2019-08-08T01:29:39Z" finished-at="2019-08-08T01:29:40Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method status="PASS" signature="reviewProduct(java.lang.reflect.Method)[pri:0, instance:TestNopCommerce@dfd3711]" name="reviewProduct" duration-ms="7643" started-at="2019-08-08T01:29:40Z" finished-at="2019-08-08T01:29:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestNopCommerce.reviewProduct(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- reviewProduct -->
+        <test-method status="PASS" signature="teardownTest(org.testng.ITestResult)[pri:0, instance:TestNopCommerce@dfd3711]" name="teardownTest" is-config="true" duration-ms="1" started-at="2019-08-08T01:29:47Z" finished-at="2019-08-08T01:29:47Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=reviewProduct status=SUCCESS method=TestNopCommerce.reviewProduct(java.lang.reflect.Method)[pri:0, instance:TestNopCommerce@dfd3711] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownTest -->
+        <test-method status="PASS" signature="setupTest()[pri:0, instance:TestNopCommerce@dfd3711]" name="setupTest" is-config="true" duration-ms="563" started-at="2019-08-08T01:29:47Z" finished-at="2019-08-08T01:29:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupTest -->
+        <test-method status="PASS" signature="sendProductEmailToFriend(java.lang.reflect.Method)[pri:0, instance:TestNopCommerce@dfd3711]" name="sendProductEmailToFriend" duration-ms="7341" started-at="2019-08-08T01:29:48Z" finished-at="2019-08-08T01:29:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[public void TestNopCommerce.sendProductEmailToFriend(java.lang.reflect.Method)]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sendProductEmailToFriend -->
+        <test-method status="PASS" signature="teardownTest(org.testng.ITestResult)[pri:0, instance:TestNopCommerce@dfd3711]" name="teardownTest" is-config="true" duration-ms="1" started-at="2019-08-08T01:29:55Z" finished-at="2019-08-08T01:29:55Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=sendProductEmailToFriend status=SUCCESS method=TestNopCommerce.sendProductEmailToFriend(java.lang.reflect.Method)[pri:0, instance:TestNopCommerce@dfd3711] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardownTest -->
+        <test-method status="PASS" signature="flush()[pri:0, instance:TestNopCommerce@dfd3711]" name="flush" is-config="true" duration-ms="1168" started-at="2019-08-08T01:29:55Z" finished-at="2019-08-08T01:29:56Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- flush -->
+      </class> <!-- TestNopCommerce -->
+    </test> <!-- test in Chrome -->
+  </suite> <!-- SingleSuite -->
+</testng-results>
