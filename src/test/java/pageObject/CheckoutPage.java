@@ -89,13 +89,9 @@ public class CheckoutPage extends BasePage {
         if (firstTime) {
 
             this.city.sendKeys(city);
-            assertEquals(city , "Test");
             this.address1.sendKeys(address1);
-            assertEquals(address1 , "Testing apto 001");
             this.zipCode.sendKeys(zipCode);
-            assertEquals(zipCode , "12345");
             this.phoneNumber.sendKeys(phoneNumber);
-            assertEquals(phoneNumber , "12345678");
             continueButton.click();
             continueButtonStep2.click();
             shippingButton.click();
