@@ -156,7 +156,7 @@ public class CheckoutPage extends BasePage {
             this.cardCode.sendKeys(cardCode);
             continueButtonStep5.click();
             try {
-
+                //te agrego comentarios acerca de esto en el resumen
                 while (alertDisplay = true) {
                     continueButtonStep6.click();
                     wait.until(ExpectedConditions.alertIsPresent());
@@ -187,7 +187,7 @@ public class CheckoutPage extends BasePage {
             this.cardCode.sendKeys(cardCode);
             continueButtonStep5.click();
             try {
-
+                //te agrego comentarios acerca de esto en el resumen
                 while (alertDisplay = true) {
                     continueButtonStep6.click();
                     wait.until(ExpectedConditions.alertIsPresent());
