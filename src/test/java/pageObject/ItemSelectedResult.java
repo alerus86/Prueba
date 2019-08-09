@@ -47,14 +47,14 @@ public class ItemSelectedResult extends BasePage {
         shoppingCart.click();
 
     }
-
+    //funciones con nombres que no tienen relacion a lo que hacen
     public void NikonCamera () {
 
         addReview.click();
 
 
     }
-
+    //funciones con nombres que no tienen relacion a lo que hacen
     public void HTCOneMini () {
 
         emailToFriend.click();
