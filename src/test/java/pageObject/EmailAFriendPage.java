@@ -22,6 +22,7 @@ public class EmailAFriendPage extends BasePage {
         this.friendEmail.sendKeys(friendEmail);
         this.personalMessage.sendKeys(personalMessage);
         sendEmailButton.click();
+        //SUGERENCIA: AGREGAR ESPERA ACA PARA EL MENSAJE
         assertEquals(emailSuccessfullySent.getText() , "Your message has been sent.");
 
     }
