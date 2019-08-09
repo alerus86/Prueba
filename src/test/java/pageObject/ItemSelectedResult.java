@@ -29,7 +29,7 @@ public class ItemSelectedResult extends BasePage {
 
 
     public void NokiCellPhone () {
-
+        //elemento harcodeado, estás haciendo el test para un elemento especifico
         addToCartCellPhone.click();
         wait.until(ExpectedConditions.visibilityOfElementLocated((By.id("bar-notification"))));
         Assert.assertEquals(alertSuccess.getText() , "The product has been added to your shopping cart");
@@ -38,7 +38,7 @@ public class ItemSelectedResult extends BasePage {
     }
 
     public void FahrenheitBook() {
-
+        //elemento harcodeado, estás haciendo el test para un elemento especifico
         WebElement addToCartBook = chrome.findElement(By.xpath("//a[contains(text(),'Fahrenheit 451 by Ray Bradbury')]/ancestor::div[contains(@class,'product-item')]"));
         addToCartBook.findElement(By.cssSelector("input[value='Add to cart']")).click();
         wait.until(ExpectedConditions.visibilityOfElementLocated((By.id("bar-notification"))));
