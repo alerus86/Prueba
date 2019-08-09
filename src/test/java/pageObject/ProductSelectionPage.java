@@ -10,6 +10,7 @@ import org.testng.Assert;
 
 public class ProductSelectionPage extends BasePage {
 
+    //productos hardcodeados
     @FindBy (linkText = "Nokia Lumia 1020")
     private WebElement selectedCellPhoneNokia;
     @FindBy (linkText = "HTC One M8 Android L 5.0 Lollipop")
