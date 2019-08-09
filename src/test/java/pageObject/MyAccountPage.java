@@ -63,55 +63,38 @@ public class MyAccountPage extends BasePage {
     public void changePassword (String oldPassword , String newPassword , String confirmNewPassword) {
 
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("form-fields")));
-        assertEquals(myAccountButton.getText() , "My account");
         changePasswordButton.click();
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("master-wrapper-page")));
-        assertTrue(passwordFieldVisible.isDisplayed());
         this.oldPassword.sendKeys(oldPassword);
-        assertEquals(oldPassword , "Testing!");
         this.newPasswrod.sendKeys(newPassword);
         assertEquals(newPassword , "Testing#");
         this.confirmNewPassword.sendKeys(confirmNewPassword);
         assertEquals(confirmNewPassword , "Testing#");
         confirmChangePasswordButton.click();
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("result")));
-        assertEquals(passwordWasChange.getText() , "Password was changed");
     }
 
     public void addNewAddress (String addressFirstName , String addressLastName , String addressEmail , String countrySelectAddress ,
                                String stateComboAddress , String cityAddress , String newAddress , String zipCodeAddress , String phoneNumberAddress) {
 
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("form-fields")));
-        assertEquals(myAccountButton.getText() , "My account");
         myAddressButton.click();
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("page-title")));
-        assertEquals(addNewAddressTitle.getText() , "My account - Addresses");
         addNewAddressButton.click();
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("page-title")));
-        assertEquals(addNewAddressTitle.getText() , "My account - Add new address");
         this.addressFirstName.sendKeys(addressFirstName);
-        assertEquals(addressFirstName , "Test1");
         this.addressLastName.sendKeys(addressLastName);
-        assertEquals(addressLastName , "Testing1");
         this.addressEmail.sendKeys(addressEmail);
-        assertEquals(addressEmail , "testing2019@testing.com");
         Select countryCombo = new Select(this.countrySelectAddress);
         countryCombo.selectByValue(countrySelectAddress);
         Select stateCombo = new Select(this.stateComboAddress);
         stateCombo.selectByValue(stateComboAddress);
         this.cityAddress.sendKeys(cityAddress);
-        assertEquals(cityAddress , "City");
         this.newAddress.sendKeys(newAddress);
-        assertEquals(newAddress , "Testing 1212 block 2");
         this.zipCodeAddress.sendKeys(zipCodeAddress);
-        assertEquals(zipCodeAddress , "12345");
         this.phoneNumberAddress.sendKeys(phoneNumberAddress);
-        assertEquals(phoneNumberAddress , "1234567");
         saveNewAddress.click();
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("page-title")));
-        assertEquals(addNewAddressTitle.getText() , "My account - Addresses");
-
-
     }
 
     public boolean MyAccountPageTitleDisplayed () {
