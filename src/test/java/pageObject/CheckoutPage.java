@@ -206,7 +206,7 @@ public class CheckoutPage extends BasePage {
     }
 
     public void deleteCheckoutProduct() {
-
+        //productos harcodeados
         deleteCheckSelected1.findElement(By.cssSelector("[type='checkbox']")).click();
         deleteCheckSelected2.findElement(By.cssSelector("[type='checkbox']")).click();
         updateCart.click();
