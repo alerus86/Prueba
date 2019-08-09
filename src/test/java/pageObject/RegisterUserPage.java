@@ -42,28 +42,18 @@ public class RegisterUserPage extends BasePage {
 
         assertEquals(registerTitle.getText() , "Register");
         gender.click();
-        assertTrue(gender.isSelected());
         this.firstName.sendKeys(firstName);
-        assertEquals(firstName , "Test");
         this.lastName.sendKeys(lastName);
-        assertEquals(lastName , "Testing");
         Select comboDayOfBirth = new Select(this.dayOfBirth);
         comboDayOfBirth.selectByValue(dayOfBirth);
-        assertEquals(dayOfBirth , "14");
         Select comboMonthOfBirth = new Select((this.monthOfBirth));
         comboMonthOfBirth.selectByValue(monthOfBirth);
-        assertEquals(monthOfBirth , "7");
         Select comboYearOfBirth = new Select(this.yearOfBirth);
         comboYearOfBirth.selectByValue(yearOfBirth);
-        assertEquals(yearOfBirth , "1986");
         this.email.sendKeys(email);
-        assertEquals(email , "testing1907@test.com");
         this.password.sendKeys(password);
-        assertEquals(password , "Test1234");
         this.confirmPassword.sendKeys(confirmPassword);
-        assertEquals(confirmPassword , "Test1234");
         registerUserButton.click();
-
     }
 
 
