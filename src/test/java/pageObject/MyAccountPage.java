@@ -67,9 +67,7 @@ public class MyAccountPage extends BasePage {
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("master-wrapper-page")));
         this.oldPassword.sendKeys(oldPassword);
         this.newPasswrod.sendKeys(newPassword);
-        assertEquals(newPassword , "Testing#");
         this.confirmNewPassword.sendKeys(confirmNewPassword);
-        assertEquals(confirmNewPassword , "Testing#");
         confirmChangePasswordButton.click();
         wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(By.className("result")));
     }

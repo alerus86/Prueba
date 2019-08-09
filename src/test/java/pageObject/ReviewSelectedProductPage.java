@@ -28,7 +28,6 @@ public class ReviewSelectedProductPage extends BasePage {
         this.reviewText.sendKeys(reviewText);
         ratingReviewRadioButton.click();
         submitReview.click();
-        assertEquals(reviewSuccessfullyAdded.getText() , "Product review is successfully added.");
     }
 
 
