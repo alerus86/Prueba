@@ -2,45 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="165200e7-6d7c-433d-8fb0-660f693366fc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/drivers/chromedriver" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MercadoLibre.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/DataProviderClass.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestNopCommerce.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MercadoLibre.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/TestNopCommerce.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/CheckoutPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/pageObject/CategoriasPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/CompareProductPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/EmailAFriendPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/HomePage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/ItemSelectedResult.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/LoginUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/LogoutUser.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/MyAccountPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/ProductSelectionPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/RegisterUserPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/ResultProductPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/ReviewSelectedProductPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/SearchAndResultPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/pageObject/ShoppingCartPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/BaseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/DataProviderClass.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/TestNopCommerce.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/CheckoutPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/CompareProductPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/EmailAFriendPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/HomePage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/ItemSelectedResult.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/LoginUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/LogoutUser.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/MyAccountPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/ProductSelectionPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/RegisterUserPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/ResultProductPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/ReviewSelectedProductPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/SearchAndResultPage.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/pageObject/ShoppingCartPage.class" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -85,8 +48,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/CategoriasPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="562">
-              <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+            <state relative-caret-position="735">
+              <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -97,8 +60,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/MercadoLibre.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+            <state relative-caret-position="270">
+              <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -122,6 +85,11 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="master" />
+      </map>
+    </option>
   </component>
   <component name="GithubProjectSettings">
     <option name="CREATE_PULL_REQUEST_DEFAULT_BRANCH" value="master" />
@@ -190,6 +158,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -197,29 +166,10 @@
               <item name="MercadoLibre 2" type="b2602c69:ProjectViewProjectNode" />
               <item name="MercadoLibre 2" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="MercadoLibre 2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MercadoLibre 2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MercadoLibre 2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MercadoLibre 2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="MercadoLibre 2" type="b2602c69:ProjectViewProjectNode" />
-              <item name="MercadoLibre 2" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -252,53 +202,6 @@
     </option>
   </component>
   <component name="RunManager" selected="TestNG./Users/maryale/Desktop/nopCommerce/src/test/java/MercadoLibre.xml">
-    <configuration default="true" type="JetRunConfigurationType" factoryName="Kotlin">
-      <module name="MercadoLibre" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType" factoryName="Kotlin script">
-      <module name="MercadoLibre" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="C:/Users/aruske/Documents/AutomationOA/nopCommerce/src/test/java/TestNopCommerce.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="MercadoLibre" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/src/test/java/TestNopCommerce.xml" />
@@ -357,11 +260,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG./Users/maryale/Desktop/nopCommerce/src/test/java/MercadoLibre.xml" />
-        <item itemvalue="TestNG.C:/Users/aruske/Documents/AutomationOA/nopCommerce/src/test/java/TestNopCommerce.xml" />
-        <item itemvalue="TestNG.TestNopCommerce.checkOutConTarjetaDeCredito" />
-        <item itemvalue="TestNG.TestNopCommerce.nuevoUsuarioRegistrado" />
         <item itemvalue="TestNG.TestNopCommerce.sendProductEmailToFriend" />
+        <item itemvalue="TestNG.TestNopCommerce.nuevoUsuarioRegistrado" />
+        <item itemvalue="TestNG.TestNopCommerce.checkOutConTarjetaDeCredito" />
+        <item itemvalue="TestNG.C:/Users/aruske/Documents/AutomationOA/nopCommerce/src/test/java/TestNopCommerce.xml" />
+        <item itemvalue="TestNG./Users/maryale/Desktop/nopCommerce/src/test/java/MercadoLibre.xml" />
       </list>
     </recent_temporary>
   </component>
@@ -376,6 +279,14 @@
       <option name="presentableId" value="Default" />
       <updated>1560019045433</updated>
     </task>
+    <task id="LOCAL-00001" summary="Prueba">
+      <created>1600710119492</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1600710119492</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -423,7 +334,7 @@
     <frame x="0" y="23" width="1440" height="821" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49894738" visible="true" weight="0.23748212" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49894738" visible="true" weight="0.24391988" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -438,7 +349,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3286119" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3286119" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5013423" side_tool="true" weight="0.40934843" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5013423" side_tool="true" weight="0.40877914" />
       <window_info anchor="bottom" id="Version Control" order="9" weight="0.3286119" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.32647464" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -450,6 +361,10 @@
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Prueba" />
+    <option name="LAST_COMMIT_MESSAGE" value="Prueba" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
@@ -666,39 +581,15 @@
     <entry file="file://$PROJECT_DIR$/reports/images/image_20190807013231.png" />
     <entry file="file://$PROJECT_DIR$/reports/images/image_20190807040054.png" />
     <entry file="file://$PROJECT_DIR$/reports/images/image_20190807040354.png" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/utils/SeleniumUtils.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="53" selection-start-line="15" selection-start-column="53" selection-end-line="15" selection-end-column="53" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="780">
-          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/utils/SeleniumUtils.java" />
+    <entry file="file://$PROJECT_DIR$/pom.xml" />
     <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/MyAccountPage.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/RegisterUserPage.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/LogoutUser.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/ProductSelectionPage.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/LoginUser.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/DataProviderClass.java" />
-    <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/BasePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="28" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/BasePage.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/MercadoLibre.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
@@ -721,8 +612,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/pageObject/CategoriasPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="562">
-          <caret line="51" column="5" lean-forward="true" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
+        <state relative-caret-position="735">
+          <caret line="51" column="5" selection-start-line="51" selection-start-column="5" selection-end-line="51" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -731,8 +622,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/MercadoLibre.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="15" column="18" lean-forward="true" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        <state relative-caret-position="270">
+          <caret line="18" column="8" lean-forward="true" selection-start-line="18" selection-start-column="8" selection-end-line="18" selection-end-column="8" />
         </state>
       </provider>
     </entry>
